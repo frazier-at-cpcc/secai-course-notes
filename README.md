@@ -12,7 +12,17 @@ contents, domain dividers, figures, and PDF bookmarks.
 
 ## Status
 
-Work in progress on the `build/1.0-notes` branch.
+Version 1.0.0 covers every objective in all four exam domains: 15 objectives in
+31 topics, about 85 pages. The build produces the complete book and one PDF
+per domain:
+
+| File | Contents |
+|---|---|
+| `secai-course-notes.pdf` | All four domains |
+| `secai-course-notes-domain-1.pdf` | 1.0 Basic AI Concepts Related to Cybersecurity |
+| `secai-course-notes-domain-2.pdf` | 2.0 Securing AI Systems |
+| `secai-course-notes-domain-3.pdf` | 3.0 AI-assisted Security |
+| `secai-course-notes-domain-4.pdf` | 4.0 AI Governance, Risk, and Compliance |
 
 See [AUTHORING.md](AUTHORING.md) for how topics are written and tested.
 
