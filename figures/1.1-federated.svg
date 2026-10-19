@@ -1,0 +1,55 @@
+<svg viewBox="0 0 760 252" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Federated learning: the server sends the global model to three sites, each trains on its own data, and only weight updates return to the server to be averaged">
+  <defs>
+    <marker id="fd-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker>
+    <marker id="fd-pur" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6d28d9"/></marker>
+  </defs>
+  <!-- server -->
+  <rect x="262.5" y="10.5" width="240" height="60" rx="7" fill="#1a1209"/>
+  <rect x="260" y="8" width="240" height="60" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+  <g text-anchor="middle">
+    <text x="380" y="32" font-size="13" font-weight="800" fill="#fff">Aggregation server</text>
+    <text x="380" y="48" font-size="9.5" font-weight="700" fill="#efe6ff">averages the updates into</text>
+    <text x="380" y="60" font-size="9.5" font-weight="700" fill="#efe6ff">the next global model</text>
+  </g>
+  <!-- arrows: global model down (purple), updates up (ink) -->
+  <g stroke="#6d28d9" stroke-width="2" fill="none" marker-end="url(#fd-pur)">
+    <path d="M300 71L104 136"/>
+    <path d="M362 71L362 136"/>
+    <path d="M428 71L624 136"/>
+  </g>
+  <g stroke="#1a1209" stroke-width="2" fill="none" marker-end="url(#fd-ink)">
+    <path d="M140 138L332 73"/>
+    <path d="M398 138L398 73"/>
+    <path d="M660 138L462 73"/>
+  </g>
+  <text x="354" y="108" text-anchor="end" font-size="9.5" font-weight="800" fill="#6d28d9">1. global model</text>
+  <text x="406" y="108" font-size="9.5" font-weight="800" fill="#1a1209">3. weight updates</text>
+  <!-- sites -->
+  <g>
+    <rect x="22.5" y="142.5" width="200" height="80" rx="7" fill="#1a1209"/>
+    <rect x="20" y="140" width="200" height="80" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+    <rect x="282.5" y="142.5" width="200" height="80" rx="7" fill="#1a1209"/>
+    <rect x="280" y="140" width="200" height="80" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+    <rect x="542.5" y="142.5" width="200" height="80" rx="7" fill="#1a1209"/>
+    <rect x="540" y="140" width="200" height="80" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="120" y="160" font-size="12" font-weight="800" fill="#1a1209">Site A: hospital</text>
+    <text x="380" y="160" font-size="12" font-weight="800" fill="#1a1209">Site B: bank</text>
+    <text x="640" y="160" font-size="12" font-weight="800" fill="#1a1209">Site C: branch SOC</text>
+    <text x="120" y="174" font-size="9" font-weight="600" fill="#5c4a30">2. trains a copy locally</text>
+    <text x="380" y="174" font-size="9" font-weight="600" fill="#5c4a30">2. trains a copy locally</text>
+    <text x="640" y="174" font-size="9" font-weight="600" fill="#5c4a30">2. trains a copy locally</text>
+  </g>
+  <g>
+    <rect x="34" y="184" width="172" height="26" rx="5" fill="#fffae0" stroke="#5c4a30" stroke-width="1.5"/>
+    <rect x="294" y="184" width="172" height="26" rx="5" fill="#fffae0" stroke="#5c4a30" stroke-width="1.5"/>
+    <rect x="554" y="184" width="172" height="26" rx="5" fill="#fffae0" stroke="#5c4a30" stroke-width="1.5"/>
+  </g>
+  <g text-anchor="middle" font-size="9.5" font-weight="700" fill="#1a1209">
+    <text x="120" y="201">patient records stay here</text>
+    <text x="380" y="201">transactions stay here</text>
+    <text x="640" y="201">raw logs stay here</text>
+  </g>
+  <text x="380" y="244" text-anchor="middle" font-size="9.5" font-weight="800" fill="#1a1209">EACH ROUND <tspan font-weight="600" fill="#5c4a30">repeats steps 1 to 3; the raw training data never leaves its site</tspan></text>
+</svg>

@@ -1,0 +1,70 @@
+<svg viewBox="0 0 760 214" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How a chat request is assembled: a system prompt, example turns, and a user prompt built from a template are rendered by the model's chat template into one token stream, which the model answers">
+  <defs>
+    <marker id="pa-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker>
+  </defs>
+  <!-- left notes -->
+  <g font-size="9" font-weight="600" fill="#5c4a30" text-anchor="end">
+    <text x="166" y="32">written once by the</text>
+    <text x="166" y="44">developer: role, rules,</text>
+    <text x="166" y="56">output format</text>
+    <text x="166" y="98">chosen to teach the</text>
+    <text x="166" y="110">labels and the format</text>
+  </g>
+  <!-- template -->
+  <rect x="8.5" y="148.5" width="150" height="54" rx="7" fill="#1a1209"/>
+  <rect x="6" y="146" width="150" height="54" rx="7" fill="#fffae0" stroke="#1a1209" stroke-width="2"/>
+  <text x="81" y="166" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Template</text>
+  <text x="81" y="181" text-anchor="middle" font-size="9" class="mono" fill="#1a1209">{rule} on {host}</text>
+  <text x="81" y="193" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">filled by code</text>
+  <path d="M158 173H182" stroke="#1a1209" stroke-width="2" marker-end="url(#pa-ink)"/>
+  <!-- three message boxes -->
+  <rect x="188.5" y="16.5" width="180" height="50" rx="7" fill="#1a1209"/>
+  <rect x="186" y="14" width="180" height="50" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+  <rect x="188.5" y="82.5" width="180" height="50" rx="7" fill="#1a1209"/>
+  <rect x="186" y="80" width="180" height="50" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+  <rect x="188.5" y="148.5" width="180" height="54" rx="7" fill="#1a1209"/>
+  <rect x="186" y="146" width="180" height="54" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+  <g text-anchor="middle">
+    <text x="276" y="35" font-size="12" font-weight="800" fill="#fff">System prompt</text>
+    <text x="276" y="51" font-size="9" font-weight="700" fill="#efe6ff">role: system</text>
+    <text x="276" y="101" font-size="12" font-weight="800" fill="#1a1209">Examples (shots)</text>
+    <text x="276" y="117" font-size="9" font-weight="700" fill="#3a1d70">user / assistant pairs</text>
+    <text x="276" y="166" font-size="12" font-weight="800" fill="#1a1209">User prompt</text>
+    <text x="276" y="181" font-size="9" font-weight="700" fill="#5c4a30">role: user</text>
+    <text x="276" y="193" font-size="9" font-weight="700" fill="#9a3412">untrusted data lands here</text>
+  </g>
+  <g stroke="#1a1209" stroke-width="2" fill="none" marker-end="url(#pa-ink)">
+    <path d="M368 39H404"/>
+    <path d="M368 105H404"/>
+    <path d="M368 173H404"/>
+  </g>
+  <!-- chat template rendering -->
+  <rect x="412.5" y="10.5" width="214" height="194" rx="7" fill="#1a1209"/>
+  <rect x="410" y="8" width="214" height="194" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+  <text x="422" y="27" font-size="12" font-weight="800" fill="#1a1209">Chat template</text>
+  <text x="510" y="27" font-size="9" font-weight="600" fill="#5c4a30">(Qwen, ChatML)</text>
+  <g class="mono" font-size="9" fill="#1a1209">
+    <text x="422" y="47" fill="#6d28d9">&lt;|im_start|&gt;system</text>
+    <text x="422" y="59" fill="#6d28d9">Classify the log line...&lt;|im_end|&gt;</text>
+    <text x="422" y="75" fill="#3a1d70">&lt;|im_start|&gt;user</text>
+    <text x="422" y="87" fill="#3a1d70">sshd[812]: Failed...&lt;|im_end|&gt;</text>
+    <text x="422" y="99" fill="#3a1d70">&lt;|im_start|&gt;assistant</text>
+    <text x="422" y="111" fill="#3a1d70">BRUTE_FORCE&lt;|im_end|&gt;</text>
+    <text x="422" y="127">&lt;|im_start|&gt;user</text>
+    <text x="422" y="139">sshd[777]: Invalid...&lt;|im_end|&gt;</text>
+    <text x="422" y="155">&lt;|im_start|&gt;assistant</text>
+  </g>
+  <text x="422" y="178" font-size="9" font-weight="600" fill="#5c4a30">one token stream; the model</text>
+  <text x="422" y="190" font-size="9" font-weight="600" fill="#5c4a30">continues it after "assistant"</text>
+  <!-- model and reply -->
+  <path d="M624 80H648" stroke="#1a1209" stroke-width="2" marker-end="url(#pa-ink)"/>
+  <rect x="654.5" y="52.5" width="98" height="56" rx="7" fill="#1a1209"/>
+  <rect x="652" y="50" width="98" height="56" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+  <text x="701" y="74" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">Model</text>
+  <text x="701" y="90" text-anchor="middle" font-size="9" class="mono" fill="#efe6ff">qwen2.5:0.5b</text>
+  <path d="M701 108V134" stroke="#1a1209" stroke-width="2" marker-end="url(#pa-ink)"/>
+  <rect x="654.5" y="142.5" width="98" height="50" rx="7" fill="#1a1209"/>
+  <rect x="652" y="140" width="98" height="50" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+  <text x="701" y="161" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Reply</text>
+  <text x="701" y="176" text-anchor="middle" font-size="9" font-weight="700" fill="#1a1209">BRUTE_FORCE</text>
+</svg>

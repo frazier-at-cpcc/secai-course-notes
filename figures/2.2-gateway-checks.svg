@@ -1,0 +1,64 @@
+<svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI gateway checks in order, each with the HTTP status it returns on failure">
+<defs><marker id="gwa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker><marker id="gwr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9a3412"/></marker><marker id="gwp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6d28d9"/></marker></defs>
+<rect x="6.5" y="48.5" width="52" height="50" rx="7" fill="#1a1209"/><rect x="4" y="46" width="52" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="30.0" y="74.2" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">Client</text>
+<rect x="58" y="22" width="691" height="150" rx="7" fill="#efe6ff" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="403.5" y="36" text-anchor="middle" font-size="9.5" font-weight="800" fill="#6d28d9">AI GATEWAY: FIRST FAILED CHECK ANSWERS</text>
+<path d="M59 71.0H61" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gwa)"/>
+<rect x="66.5" y="48.5" width="78" height="50" rx="7" fill="#1a1209"/><rect x="64" y="46" width="78" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="103.0" y="68.4" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">Endpoint</text>
+<text x="103.0" y="80.9" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">allowed route?</text>
+<path d="M144 71.0H149" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gwa)"/>
+<path d="M103.0 100V122" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gwr)"/>
+<rect x="83.0" y="125" width="40" height="18" rx="4" fill="#fffae0" stroke="#9a3412" stroke-width="1.5"/>
+<text x="103.0" y="138" text-anchor="middle" font-size="10.5" font-weight="800" fill="#9a3412" class="mono">403</text>
+<rect x="152.5" y="48.5" width="78" height="50" rx="7" fill="#1a1209"/><rect x="150" y="46" width="78" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="189.0" y="68.4" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">API key</text>
+<text x="189.0" y="80.9" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">known caller?</text>
+<path d="M230 71.0H235" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gwa)"/>
+<path d="M189.0 100V122" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gwr)"/>
+<rect x="169.0" y="125" width="40" height="18" rx="4" fill="#fffae0" stroke="#9a3412" stroke-width="1.5"/>
+<text x="189.0" y="138" text-anchor="middle" font-size="10.5" font-weight="800" fill="#9a3412" class="mono">401</text>
+<rect x="238.5" y="48.5" width="78" height="50" rx="7" fill="#1a1209"/><rect x="236" y="46" width="78" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="275.0" y="68.4" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">Rate limit</text>
+<text x="275.0" y="80.9" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">token bucket</text>
+<path d="M316 71.0H321" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gwa)"/>
+<path d="M275.0 100V122" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gwr)"/>
+<rect x="255.0" y="125" width="40" height="18" rx="4" fill="#fffae0" stroke="#9a3412" stroke-width="1.5"/>
+<text x="275.0" y="138" text-anchor="middle" font-size="10.5" font-weight="800" fill="#9a3412" class="mono">429</text>
+<rect x="324.5" y="48.5" width="78" height="50" rx="7" fill="#1a1209"/><rect x="322" y="46" width="78" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="361.0" y="68.4" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">Data size</text>
+<text x="361.0" y="80.9" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">max bytes</text>
+<path d="M402 71.0H407" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gwa)"/>
+<path d="M361.0 100V122" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gwr)"/>
+<rect x="341.0" y="125" width="40" height="18" rx="4" fill="#fffae0" stroke="#9a3412" stroke-width="1.5"/>
+<text x="361.0" y="138" text-anchor="middle" font-size="10.5" font-weight="800" fill="#9a3412" class="mono">413</text>
+<rect x="410.5" y="48.5" width="78" height="50" rx="7" fill="#1a1209"/><rect x="408" y="46" width="78" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="447.0" y="68.4" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">Quantity</text>
+<text x="447.0" y="80.9" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">max messages</text>
+<path d="M488 71.0H493" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gwa)"/>
+<path d="M447.0 100V122" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gwr)"/>
+<rect x="427.0" y="125" width="40" height="18" rx="4" fill="#fffae0" stroke="#9a3412" stroke-width="1.5"/>
+<text x="447.0" y="138" text-anchor="middle" font-size="10.5" font-weight="800" fill="#9a3412" class="mono">400</text>
+<rect x="496.5" y="48.5" width="78" height="50" rx="7" fill="#1a1209"/><rect x="494" y="46" width="78" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="533.0" y="68.4" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">Modality</text>
+<text x="533.0" y="80.9" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">text only?</text>
+<path d="M574 71.0H579" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gwa)"/>
+<path d="M533.0 100V122" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gwr)"/>
+<rect x="513.0" y="125" width="40" height="18" rx="4" fill="#fffae0" stroke="#9a3412" stroke-width="1.5"/>
+<text x="533.0" y="138" text-anchor="middle" font-size="10.5" font-weight="800" fill="#9a3412" class="mono">415</text>
+<rect x="582.5" y="48.5" width="78" height="50" rx="7" fill="#1a1209"/><rect x="580" y="46" width="78" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="619.0" y="68.4" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">Prompt</text>
+<text x="619.0" y="80.9" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">firewall</text>
+<path d="M660 71.0H665" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gwa)"/>
+<path d="M619.0 100V122" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gwr)"/>
+<rect x="599.0" y="125" width="40" height="18" rx="4" fill="#fffae0" stroke="#9a3412" stroke-width="1.5"/>
+<text x="619.0" y="138" text-anchor="middle" font-size="10.5" font-weight="800" fill="#9a3412" class="mono">403</text>
+<rect x="668.5" y="48.5" width="78" height="50" rx="7" fill="#1a1209"/><rect x="666" y="46" width="78" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="705.0" y="68.4" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">Quota</text>
+<text x="705.0" y="80.9" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">tokens today</text>
+<path d="M705.0 100V122" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gwr)"/>
+<rect x="685.0" y="125" width="40" height="18" rx="4" fill="#fffae0" stroke="#9a3412" stroke-width="1.5"/>
+<text x="705.0" y="138" text-anchor="middle" font-size="10.5" font-weight="800" fill="#9a3412" class="mono">429</text>
+<text x="404.0" y="166" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1a1209">Cap max_tokens, forward to the model, add the tokens used to the caller's quota</text>
+</svg>

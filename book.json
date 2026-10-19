@@ -1,0 +1,193 @@
+{
+  "title": "CompTIA SecAI+ CY0-001 Course Notes",
+  "shortTitle": "SecAI+ CY0-001 Course Notes",
+  "author": "Frazier A. Smith, Ed.D.",
+  "affiliation": "Central Piedmont Community College",
+  "site": "vfrazier.app",
+  "version": "1.0.0",
+  "date": "October 2026",
+  "license": "CC BY-NC-SA 4.0",
+  "exam": {
+    "name": "SecAI+",
+    "code": "CY0-001",
+    "version": "V1",
+    "series": "CompTIA Expansion Series",
+    "repo": "https://github.com/frazier-at-cpcc/secai-course-notes",
+    "coverLine": "AI concepts, securing AI systems, AI-assisted security, and AI governance, one exam objective at a time.",
+    "tryLine": "Do them. Watching a small model leak a secret it was told to keep teaches more about prompt injection than any definition.",
+    "facts": [
+      {
+        "value": "60",
+        "label": "Questions, max"
+      },
+      {
+        "value": "60",
+        "label": "Minutes"
+      },
+      {
+        "value": "600",
+        "label": "Passing (100–900)"
+      },
+      {
+        "value": "V1",
+        "label": "CY0-001, Feb 2026"
+      }
+    ]
+  },
+  "domains": [
+    {
+      "num": "1.0",
+      "title": "Basic AI Concepts Related to Cybersecurity",
+      "weight": 17,
+      "objectives": [
+        {
+          "num": "1.1",
+          "title": "Compare and contrast various AI types and techniques used in cybersecurity"
+        },
+        {
+          "num": "1.2",
+          "title": "Explain the importance of data security in relation to AI"
+        },
+        {
+          "num": "1.3",
+          "title": "Explain the importance of security throughout the life cycle of AI"
+        }
+      ]
+    },
+    {
+      "num": "2.0",
+      "title": "Securing AI Systems",
+      "weight": 40,
+      "objectives": [
+        {
+          "num": "2.1",
+          "title": "Given a scenario, use AI threat-modeling resources"
+        },
+        {
+          "num": "2.2",
+          "title": "Given a set of requirements, implement security controls for AI systems"
+        },
+        {
+          "num": "2.3",
+          "title": "Given a scenario, implement appropriate access controls for AI systems"
+        },
+        {
+          "num": "2.4",
+          "title": "Given a scenario, implement data security controls for AI systems"
+        },
+        {
+          "num": "2.5",
+          "title": "Given a scenario, implement monitoring and auditing for AI systems"
+        },
+        {
+          "num": "2.6",
+          "title": "Given a scenario, analyze the evidence of an attack and suggest compensating controls for AI systems"
+        }
+      ]
+    },
+    {
+      "num": "3.0",
+      "title": "AI-assisted Security",
+      "weight": 24,
+      "objectives": [
+        {
+          "num": "3.1",
+          "title": "Given a scenario, use AI-enabled tools to facilitate security tasks"
+        },
+        {
+          "num": "3.2",
+          "title": "Explain how AI enables or enhances attack vectors"
+        },
+        {
+          "num": "3.3",
+          "title": "Given a scenario, use AI to automate security tasks"
+        }
+      ]
+    },
+    {
+      "num": "4.0",
+      "title": "AI Governance, Risk, and Compliance",
+      "weight": 19,
+      "objectives": [
+        {
+          "num": "4.1",
+          "title": "Explain organizational governance structures that support AI"
+        },
+        {
+          "num": "4.2",
+          "title": "Explain risks associated with AI"
+        },
+        {
+          "num": "4.3",
+          "title": "Summarize the impact of compliance on business use and development of AI"
+        }
+      ]
+    }
+  ],
+  "volumes": {
+    "master": {
+      "file": "secai-course-notes",
+      "topics": [
+        "domain-1/1.1-ai-types.md",
+        "domain-1/1.1-model-training.md",
+        "domain-1/1.1-prompt-engineering.md",
+        "domain-1/1.2-data-processing.md",
+        "domain-1/1.2-watermarking-and-rag.md",
+        "domain-1/1.3-ai-life-cycle.md",
+        "domain-1/1.3-human-centric-design.md",
+        "domain-2/2.1-owasp-top-10.md",
+        "domain-2/2.1-threat-modeling-resources.md",
+        "domain-2/2.2-model-controls.md",
+        "domain-2/2.2-gateway-controls.md",
+        "domain-2/2.3-ai-access-controls.md",
+        "domain-2/2.4-encryption.md",
+        "domain-2/2.4-data-safety.md",
+        "domain-2/2.5-prompt-and-log-monitoring.md",
+        "domain-2/2.5-cost-and-auditing.md",
+        "domain-2/2.6-prompt-attacks.md",
+        "domain-2/2.6-model-and-data-attacks.md",
+        "domain-2/2.6-compensating-controls.md",
+        "domain-3/3.1-ai-security-tools.md",
+        "domain-3/3.1-ai-security-use-cases.md",
+        "domain-3/3.2-ai-generated-content.md",
+        "domain-3/3.2-automated-attacks.md",
+        "domain-3/3.3-ai-automation.md",
+        "domain-3/3.3-ai-in-cicd.md",
+        "domain-4/4.1-governance-structures.md",
+        "domain-4/4.1-ai-roles.md",
+        "domain-4/4.2-responsible-ai.md",
+        "domain-4/4.2-ai-risks.md",
+        "domain-4/4.3-regulations-and-standards.md",
+        "domain-4/4.3-corporate-policies.md"
+      ]
+    },
+    "domain-1": {
+      "file": "secai-course-notes-domain-1",
+      "label": "Domain 1.0: Basic AI Concepts Related to Cybersecurity",
+      "domains": [
+        "1.0"
+      ]
+    },
+    "domain-2": {
+      "file": "secai-course-notes-domain-2",
+      "label": "Domain 2.0: Securing AI Systems",
+      "domains": [
+        "2.0"
+      ]
+    },
+    "domain-3": {
+      "file": "secai-course-notes-domain-3",
+      "label": "Domain 3.0: AI-assisted Security",
+      "domains": [
+        "3.0"
+      ]
+    },
+    "domain-4": {
+      "file": "secai-course-notes-domain-4",
+      "label": "Domain 4.0: AI Governance, Risk, and Compliance",
+      "domains": [
+        "4.0"
+      ]
+    }
+  }
+}

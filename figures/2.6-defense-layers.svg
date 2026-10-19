@@ -1,0 +1,70 @@
+<svg viewBox="0 0 760 226" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compensating controls placed along the path a request takes to an AI model and its tools, with data integrity and encryption underneath">
+<defs><marker id="dl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker></defs>
+<g text-anchor="middle">
+<rect x="12.5" y="14.5" width="96" height="64" rx="7" fill="#1a1209"/><rect x="10" y="12" width="96" height="64" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="58.0" y="35" font-size="11" font-weight="800" fill="#1a1209">Caller</text>
+<text x="58.0" y="51" font-size="9" font-weight="700" fill="#5c4a30">user, app,</text>
+<text x="58.0" y="63" font-size="9" font-weight="700" fill="#5c4a30">or agent</text>
+<rect x="119.5" y="14.5" width="96" height="64" rx="7" fill="#1a1209"/><rect x="117" y="12" width="96" height="64" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="165.0" y="35" font-size="11" font-weight="800" fill="#1a1209">API gateway</text>
+<text x="165.0" y="51" font-size="9" font-weight="700" fill="#1a1209">access control,</text>
+<text x="165.0" y="63" font-size="9" font-weight="700" fill="#1a1209">rate limiting</text>
+<rect x="226.5" y="14.5" width="96" height="64" rx="7" fill="#1a1209"/><rect x="224" y="12" width="96" height="64" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="272.0" y="35" font-size="11" font-weight="800" fill="#1a1209">Prompt firewall</text>
+<text x="272.0" y="51" font-size="9" font-weight="700" fill="#1a1209">screens input</text>
+<text x="272.0" y="63" font-size="9" font-weight="700" fill="#1a1209">and output</text>
+<rect x="333.5" y="14.5" width="96" height="64" rx="7" fill="#1a1209"/><rect x="331" y="12" width="96" height="64" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="379.0" y="35" font-size="11" font-weight="800" fill="#1a1209">Template</text>
+<text x="379.0" y="51" font-size="9" font-weight="700" fill="#1a1209">fixed slots,</text>
+<text x="379.0" y="63" font-size="9" font-weight="700" fill="#1a1209">delimiters</text>
+<rect x="440.5" y="14.5" width="96" height="64" rx="7" fill="#1a1209"/><rect x="438" y="12" width="96" height="64" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="486.0" y="35" font-size="11" font-weight="800" fill="#fff">Model</text>
+<text x="486.0" y="51" font-size="9" font-weight="700" fill="#efe6ff">guardrails,</text>
+<text x="486.0" y="63" font-size="9" font-weight="700" fill="#efe6ff">safety tuning</text>
+<rect x="547.5" y="14.5" width="96" height="64" rx="7" fill="#1a1209"/><rect x="545" y="12" width="96" height="64" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="593.0" y="35" font-size="11" font-weight="800" fill="#1a1209">Output check</text>
+<text x="593.0" y="51" font-size="9" font-weight="700" fill="#1a1209">escape, redact,</text>
+<text x="593.0" y="63" font-size="9" font-weight="700" fill="#1a1209">allowlist links</text>
+<rect x="654.5" y="14.5" width="96" height="64" rx="7" fill="#1a1209"/><rect x="652" y="12" width="96" height="64" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="700.0" y="35" font-size="11" font-weight="800" fill="#1a1209">Tools and data</text>
+<text x="700.0" y="51" font-size="9" font-weight="700" fill="#1a1209">least privilege,</text>
+<text x="700.0" y="63" font-size="9" font-weight="700" fill="#1a1209">human approval</text>
+</g><g stroke="#1a1209" stroke-width="2" marker-end="url(#dl)">
+<path d="M106.5 44.0H115"/>
+<path d="M213.5 44.0H222"/>
+<path d="M320.5 44.0H329"/>
+<path d="M427.5 44.0H436"/>
+<path d="M534.5 44.0H543"/>
+<path d="M641.5 44.0H650"/>
+</g>
+<text x="58.0" y="102" text-anchor="middle" font-size="9" font-weight="800" fill="#5c4a30">COMPENSATES</text>
+<text x="58.0" y="114" text-anchor="middle" font-size="9" font-weight="800" fill="#5c4a30">FOR</text>
+<rect x="117" y="88" width="96" height="58" rx="6" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="165.0" y="104" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">model theft</text>
+<text x="165.0" y="118" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">model DoS</text>
+<text x="165.0" y="132" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">jailbreak retries</text>
+<rect x="224" y="88" width="96" height="58" rx="6" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="272.0" y="104" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">direct injection</text>
+<text x="272.0" y="118" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">circumvention</text>
+<text x="272.0" y="132" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">jailbreak phrasing</text>
+<rect x="331" y="88" width="96" height="58" rx="6" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="379.0" y="104" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">indirect injection</text>
+<text x="379.0" y="118" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">hidden markup</text>
+<rect x="438" y="88" width="96" height="58" rx="6" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="486.0" y="104" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">harmful requests</text>
+<text x="486.0" y="118" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">policy-violating</text>
+<text x="486.0" y="132" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">output</text>
+<rect x="545" y="88" width="96" height="58" rx="6" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="593.0" y="104" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">insecure output</text>
+<text x="593.0" y="118" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">handling</text>
+<text x="593.0" y="132" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">data disclosure</text>
+<rect x="652" y="88" width="96" height="58" rx="6" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="700.0" y="104" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">excessive agency</text>
+<text x="700.0" y="118" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">insecure plug-ins</text>
+<text x="700.0" y="132" text-anchor="middle" font-size="9" font-weight="700" fill="#9a3412">integration abuse</text>
+<rect x="119.5" y="162.5" width="631" height="52" rx="7" fill="#1a1209"/><rect x="117" y="160" width="631" height="52" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="432.5" y="180" text-anchor="middle" font-size="11" font-weight="800" fill="#3a1d70">Underneath every layer: training data, RAG index, model weights, logs</text>
+<text x="432.5" y="198" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1a1209">Data integrity controls (hashes, signing, validation) and encryption (at rest, in transit) against poisoning, tampering, and theft</text>
+<text x="58.0" y="184" text-anchor="middle" font-size="9" font-weight="800" fill="#5c4a30">DATA</text>
+<text x="58.0" y="196" text-anchor="middle" font-size="9" font-weight="800" fill="#5c4a30">LAYER</text>
+</svg>

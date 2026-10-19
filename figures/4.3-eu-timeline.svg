@@ -1,0 +1,39 @@
+<svg viewBox="0 0 760 162" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EU AI Act application dates from August 2024 to August 2028">
+<path d="M14 52H748" stroke="#1a1209" stroke-width="2.5"/>
+<text x="62" y="30" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">1 Aug 2024</text>
+<circle cx="62" cy="52" r="8" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="62" y="78" text-anchor="middle" font-size="9.5" font-weight="800" fill="#1a1209">In force</text>
+<text x="62" y="91" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5c4a30">Reg. 2024/1689</text>
+<text x="168" y="30" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">2 Feb 2025</text>
+<circle cx="168" cy="52" r="8" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="168" y="78" text-anchor="middle" font-size="9.5" font-weight="800" fill="#1a1209">Prohibitions</text>
+<text x="168" y="91" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5c4a30">AI literacy</text>
+<text x="274" y="30" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">2 Aug 2025</text>
+<circle cx="274" cy="52" r="8" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="274" y="78" text-anchor="middle" font-size="9.5" font-weight="800" fill="#1a1209">GPAI model rules</text>
+<text x="274" y="91" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5c4a30">Governance</text>
+<text x="274" y="104" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5c4a30">Penalties</text>
+<text x="380" y="30" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">2 Aug 2026</text>
+<circle cx="380" cy="52" r="8" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="380" y="78" text-anchor="middle" font-size="9.5" font-weight="800" fill="#1a1209">General</text>
+<text x="380" y="91" text-anchor="middle" font-size="9.5" font-weight="800" fill="#1a1209">application</text>
+<text x="380" y="104" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5c4a30">Art. 50 transparency</text>
+<text x="380" y="117" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5c4a30">GPAI fines</text>
+<text x="486" y="30" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">2 Dec 2026</text>
+<circle cx="486" cy="52" r="8" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="486" y="78" text-anchor="middle" font-size="9.5" font-weight="800" fill="#1a1209">New prohibitions</text>
+<text x="486" y="91" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5c4a30">Art. 50(2) marking</text>
+<text x="486" y="104" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5c4a30">for existing gen AI</text>
+<text x="592" y="30" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">2 Dec 2027</text>
+<circle cx="592" cy="52" r="8" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="592" y="78" text-anchor="middle" font-size="9.5" font-weight="800" fill="#1a1209">High risk:</text>
+<text x="592" y="91" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5c4a30">Annex III uses</text>
+<text x="698" y="30" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">2 Aug 2028</text>
+<circle cx="698" cy="52" r="8" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="698" y="78" text-anchor="middle" font-size="9.5" font-weight="800" fill="#1a1209">High risk:</text>
+<text x="698" y="91" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5c4a30">Annex I products</text>
+<circle cx="220" cy="148" r="6" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="232" y="152" text-anchor="start" font-size="9.5" font-weight="600" fill="#5c4a30">original Regulation (EU) 2024/1689</text>
+<circle cx="440" cy="148" r="6" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="452" y="152" text-anchor="start" font-size="9.5" font-weight="600" fill="#5c4a30">set or moved by the AI Omnibus (2026/1744)</text>
+</svg>

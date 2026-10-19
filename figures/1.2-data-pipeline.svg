@@ -1,0 +1,46 @@
+<svg viewBox="0 0 760 222" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Data processing pipeline from raw export through cleansing, verification, and balancing to the training set, with rejected rows sent to quarantine and a manifest and lineage record covering every file">
+<defs><marker id="dp-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker>
+<marker id="dp-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9a3412"/></marker></defs>
+<g text-anchor="middle">
+<rect x="22.5" y="26.5" width="122" height="64" rx="7" fill="#1a1209"/><rect x="20" y="24" width="122" height="64" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="81" y="50" font-size="12" font-weight="800" fill="#1a1209">Raw export</text>
+<text x="81" y="66" font-size="9.5" font-weight="600" fill="#5c4a30" class="mono">alerts.csv</text>
+<text x="81" y="79" font-size="9" font-weight="600" fill="#5c4a30">SIEM, 17 rows</text>
+<rect x="172.5" y="26.5" width="122" height="64" rx="7" fill="#1a1209"/><rect x="170" y="24" width="122" height="64" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="231" y="50" font-size="12" font-weight="800" fill="#1a1209">Cleanse</text>
+<text x="231" y="66" font-size="9" font-weight="700" fill="#1a1209">trim, normalize case</text>
+<text x="231" y="79" font-size="9" font-weight="700" fill="#1a1209">remove duplicates</text>
+<rect x="322.5" y="26.5" width="122" height="64" rx="7" fill="#1a1209"/><rect x="320" y="24" width="122" height="64" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="381" y="50" font-size="12" font-weight="800" fill="#1a1209">Verify</text>
+<text x="381" y="66" font-size="9" font-weight="700" fill="#1a1209">schema, formats</text>
+<text x="381" y="79" font-size="9" font-weight="700" fill="#1a1209">allowed values</text>
+<rect x="472.5" y="26.5" width="122" height="64" rx="7" fill="#1a1209"/><rect x="470" y="24" width="122" height="64" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="531" y="50" font-size="12" font-weight="800" fill="#1a1209">Balance, augment</text>
+<text x="531" y="66" font-size="9" font-weight="600" fill="#5c4a30">training split only</text>
+<text x="531" y="79" font-size="9" font-weight="600" fill="#5c4a30">3 vs 9 becomes 9 vs 9</text>
+<rect x="622.5" y="26.5" width="122" height="64" rx="7" fill="#1a1209"/><rect x="620" y="24" width="122" height="64" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="681" y="50" font-size="12" font-weight="800" fill="#fff">Training set</text>
+<text x="681" y="66" font-size="9.5" font-weight="600" fill="#efe6ff" class="mono">clean.csv</text>
+<text x="681" y="79" font-size="9" font-weight="600" fill="#efe6ff">approved, hashed</text>
+<rect x="322.5" y="118.5" width="122" height="40" rx="7" fill="#1a1209"/><rect x="320" y="116" width="122" height="40" rx="7" fill="#fffae0" stroke="#9a3412" stroke-width="2"/>
+<text x="381" y="133" font-size="11" font-weight="800" fill="#9a3412">Quarantine</text>
+<text x="381" y="147" font-size="9" font-weight="600" fill="#5c4a30">row ID + failed field</text>
+</g>
+<g stroke="#1a1209" stroke-width="2" marker-end="url(#dp-a)">
+<path d="M144.5 56H167.5"/>
+<path d="M294.5 56H317.5"/>
+<path d="M444.5 56H467.5"/>
+<path d="M594.5 56H617.5"/>
+</g>
+<path d="M381 90.5V113.5" stroke="#9a3412" stroke-width="2" marker-end="url(#dp-r)"/>
+<text x="389" y="106" font-size="9" font-weight="700" fill="#9a3412">reject</text>
+<g stroke="#6d28d9" stroke-width="1.5" stroke-dasharray="4 3" fill="none">
+<path d="M81 90.5V178"/>
+<path d="M231 90.5V178"/>
+<path d="M381 158.5V178"/>
+<path d="M531 90.5V178"/>
+<path d="M681 90.5V178"/>
+</g>
+<rect x="22.5" y="180.5" width="722" height="34" rx="7" fill="#1a1209"/><rect x="20" y="178" width="722" height="34" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="381" y="199" text-anchor="middle" font-size="10" font-weight="800" fill="#3a1d70"><tspan class="mono">MANIFEST</tspan> + <tspan class="mono">lineage.json</tspan><tspan font-weight="600" fill="#5c4a30">: source and collector (provenance), each transform (lineage), a sha256 per file (integrity)</tspan></text>
+</svg>

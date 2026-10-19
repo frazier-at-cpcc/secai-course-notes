@@ -1,0 +1,58 @@
+<svg viewBox="0 0 760 214" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An ML pipeline from data to downstream consumers, with the attacks that strike each stage">
+<defs><marker id="as" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker></defs>
+<path d="M684.0 36V16H76.0V34" fill="none" stroke="#6d28d9" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#as)"/>
+<rect x="268" y="9" width="224" height="14" fill="#fff"/>
+<text x="380" y="20" text-anchor="middle" font-size="9.5" font-weight="800" fill="#6d28d9">FEEDBACK AND RETRAINING LOOP</text>
+<g text-anchor="middle">
+<rect x="12.5" y="38.5" width="132" height="50" rx="7" fill="#1a1209"/><rect x="10" y="36" width="132" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="76.0" y="58" font-size="12" font-weight="800" fill="#1a1209">Data</text>
+<text x="76.0" y="73" font-size="9.5" font-weight="600" fill="#5c4a30">collection, labels</text>
+<rect x="164.5" y="38.5" width="132" height="50" rx="7" fill="#1a1209"/><rect x="162" y="36" width="132" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="228.0" y="58" font-size="12" font-weight="800" fill="#1a1209">Training</text>
+<text x="228.0" y="73" font-size="9.5" font-weight="600" fill="#5c4a30">fit or fine-tune</text>
+<rect x="316.5" y="38.5" width="132" height="50" rx="7" fill="#1a1209"/><rect x="314" y="36" width="132" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="380.0" y="58" font-size="12" font-weight="800" fill="#1a1209">Model artifact</text>
+<text x="380.0" y="73" font-size="9.5" font-weight="600" fill="#5c4a30">registry, hub, file</text>
+<rect x="468.5" y="38.5" width="132" height="50" rx="7" fill="#1a1209"/><rect x="466" y="36" width="132" height="50" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="532.0" y="58" font-size="12" font-weight="800" fill="#fff">Inference API</text>
+<text x="532.0" y="73" font-size="9.5" font-weight="600" fill="#efe6ff">queries and answers</text>
+<rect x="620.5" y="38.5" width="132" height="50" rx="7" fill="#1a1209"/><rect x="618" y="36" width="132" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="684.0" y="58" font-size="12" font-weight="800" fill="#1a1209">Downstream</text>
+<text x="684.0" y="73" font-size="9.5" font-weight="600" fill="#5c4a30">apps, SIEM, users</text>
+</g>
+<g stroke="#1a1209" stroke-width="2" marker-end="url(#as)">
+<path d="M142.5 61.0H159"/>
+<path d="M294.5 61.0H311"/>
+<path d="M446.5 61.0H463"/>
+<path d="M598.5 61.0H615"/>
+</g>
+<rect x="10" y="100" width="132" height="110" rx="7" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="20" y="116" font-size="9.5" font-weight="800" fill="#9a3412">Data poisoning</text>
+<text x="20" y="131" font-size="9.5" font-weight="800" fill="#9a3412">Introducing biases</text>
+<text x="20" y="146" font-size="9.5" font-weight="800" fill="#9a3412">Backdoor triggers</text>
+<text x="20" y="158" font-size="9" font-weight="600" fill="#5c4a30">hidden in samples</text>
+<rect x="162" y="100" width="132" height="110" rx="7" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="172" y="116" font-size="9.5" font-weight="800" fill="#9a3412">Model poisoning</text>
+<text x="172" y="131" font-size="9.5" font-weight="800" fill="#9a3412">Transfer learning</text>
+<text x="172" y="143" font-size="9" font-weight="600" fill="#5c4a30">attacks</text>
+<text x="172" y="158" font-size="9.5" font-weight="800" fill="#9a3412">Backdoors learned</text>
+<text x="172" y="170" font-size="9" font-weight="600" fill="#5c4a30">into weights</text>
+<rect x="314" y="100" width="132" height="110" rx="7" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="324" y="116" font-size="9.5" font-weight="800" fill="#9a3412">AI supply chain</text>
+<text x="324" y="128" font-size="9" font-weight="600" fill="#5c4a30">attacks</text>
+<text x="324" y="143" font-size="9.5" font-weight="800" fill="#9a3412">Trojan models</text>
+<text x="324" y="158" font-size="9.5" font-weight="800" fill="#9a3412">Model theft</text>
+<text x="324" y="170" font-size="9" font-weight="600" fill="#5c4a30">(copied weights)</text>
+<rect x="466" y="100" width="132" height="110" rx="7" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="476" y="116" font-size="9.5" font-weight="800" fill="#9a3412">Input manipulation</text>
+<text x="476" y="131" font-size="9.5" font-weight="800" fill="#9a3412">Model inversion</text>
+<text x="476" y="146" font-size="9.5" font-weight="800" fill="#9a3412">Membership inference</text>
+<text x="476" y="161" font-size="9.5" font-weight="800" fill="#9a3412">Model theft</text>
+<text x="476" y="173" font-size="9" font-weight="600" fill="#5c4a30">(extraction)</text>
+<text x="476" y="188" font-size="9.5" font-weight="800" fill="#9a3412">Model DoS</text>
+<rect x="618" y="100" width="132" height="110" rx="7" fill="#fffae0" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="628" y="116" font-size="9.5" font-weight="800" fill="#9a3412">Output integrity</text>
+<text x="628" y="128" font-size="9" font-weight="600" fill="#5c4a30">attacks</text>
+<text x="628" y="143" font-size="9.5" font-weight="800" fill="#9a3412">Model skewing</text>
+<text x="628" y="155" font-size="9" font-weight="600" fill="#5c4a30">(via feedback)</text>
+</svg>
