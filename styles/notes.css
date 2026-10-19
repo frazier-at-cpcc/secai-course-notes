@@ -399,6 +399,14 @@ table.t tr:nth-child(even) td { background: var(--highlight-soft); }
 table.t td:first-child { font-weight: 700; }
 table.t td code { white-space: normal; }
 .wide-block { column-span: all; }
+.end-boxes {
+  column-span: all;
+  display: grid; grid-template-columns: 1fr 1fr; column-gap: 14pt; align-items: start;
+  margin-top: 4pt;
+}
+.end-boxes.single { grid-template-columns: 1fr; }
+.end-boxes.single .callout > ul { columns: 2; column-gap: 22pt; }
+.end-boxes.single .callout > ul > li { break-inside: avoid; }
 
 /* ---------- Figures ---------- */
 

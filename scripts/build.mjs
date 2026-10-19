@@ -235,7 +235,18 @@ function divider(d, topics) {
 </section>`;
 }
 
+// The closing exam and try boxes span both columns side by side, so a topic
+// never ends with one box stranded in a column next to an empty one.
+const END_BOXES = /((?:<div class="box"><aside class="callout (?:exam|try)">(?:(?!<\/aside>)[\s\S])*<\/aside><\/div>\s*)+)$/;
+function endBoxes(html) {
+  const m = html.match(END_BOXES);
+  if (!m) return html;
+  const n = (m[1].match(/class="callout /g) || []).length;
+  return html.slice(0, m.index) + `<div class="end-boxes${n === 1 ? ' single' : ''}">${m[1]}</div>`;
+}
+
 function topicSection(t) {
+  t = { ...t, html: endBoxes(t.html.trim()) };
   return `
 <section class="topic" id="${t.id}">
   <div class="topic-bar"><h2><span class="obj">${t.objective}</span> ${esc(t.title)}</h2><span class="dom">${t.domain.num} ${esc(t.domain.title)}</span></div>
@@ -330,7 +341,7 @@ async function render(browser, htmlText, htmlPath, pdfPath) {
       const cs = getComputedStyle(cols);
       const colWidth = (cols.clientWidth - parseFloat(cs.columnGap)) / 2;
       for (const el of cols.querySelectorAll('*')) {
-        if (el.closest('.wide-block, figure.wide, .col-end')) continue;   // these span both columns
+        if (el.closest('.wide-block, figure.wide, .col-end, .end-boxes')) continue;   // these span both columns
         // An element split across columns has one rect per fragment; measure each.
         const w = Math.max(0, ...[...el.getClientRects()].map((r) => r.width));
         if (w > colWidth + 4) out.push(`${cols.closest('.topic')?.id ?? '?'}: <${el.tagName.toLowerCase()}> ${Math.round(w)}px > ${Math.round(colWidth)}px "${el.textContent.trim().slice(0, 50)}"`);
