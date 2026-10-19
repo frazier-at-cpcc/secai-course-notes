@@ -188,6 +188,14 @@
       "domains": [
         "4.0"
       ]
+    },
+    "preview-obj-2.3-2.4": {
+      "file": "preview-obj-2.3-2.4",
+      "topics": [
+        "domain-2/2.3-ai-access-controls.md",
+        "domain-2/2.4-encryption.md",
+        "domain-2/2.4-data-safety.md"
+      ]
     }
   }
 }
