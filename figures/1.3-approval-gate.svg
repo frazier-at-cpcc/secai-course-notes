@@ -1,0 +1,42 @@
+<svg viewBox="0 0 360 334" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Approval gate: low-impact high-confidence actions run by policy, all others go to a named approver, and no answer means deny; every path is logged">
+<defs><marker id="ag-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker>
+<marker id="ag-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9a3412"/></marker></defs>
+<g text-anchor="middle">
+<rect x="97.5" y="10.5" width="170" height="44" rx="7" fill="#1a1209"/><rect x="95" y="8" width="170" height="44" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="180" y="27" font-size="12" font-weight="800" fill="#1a1209">AI proposes an action</text>
+<text x="180" y="42" font-size="9" font-weight="600" fill="#5c4a30">action, target, confidence</text>
+<rect x="72.5" y="80.5" width="220" height="46" rx="7" fill="#1a1209"/><rect x="70" y="78" width="220" height="46" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="180" y="97" font-size="11" font-weight="800" fill="#1a1209">Low impact, reversible,</text>
+<text x="180" y="113" font-size="11" font-weight="800" fill="#1a1209">and confidence 0.9 or more?</text>
+<rect x="12.5" y="168.5" width="120" height="44" rx="7" fill="#1a1209"/><rect x="10" y="166" width="120" height="44" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="70" y="185" font-size="11.5" font-weight="800" fill="#1a1209">Runs on its own</text>
+<text x="70" y="200" font-size="9" font-weight="600" fill="#5c4a30">by policy</text>
+<rect x="187.5" y="168.5" width="163" height="44" rx="7" fill="#1a1209"/><rect x="185" y="166" width="163" height="44" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="266.5" y="185" font-size="11.5" font-weight="800" fill="#fff">Named approver</text>
+<text x="266.5" y="200" font-size="9" font-weight="600" fill="#efe6ff">reviews the evidence</text>
+<rect x="177.5" y="242.5" width="76" height="38" rx="7" fill="#1a1209"/><rect x="175" y="240" width="76" height="38" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="213" y="256" font-size="11" font-weight="800" fill="#1a1209">Runs</text>
+<text x="213" y="270" font-size="9" font-weight="600" fill="#5c4a30">approved</text>
+<rect x="274.5" y="242.5" width="76" height="38" rx="7" fill="#1a1209"/><rect x="272" y="240" width="76" height="38" rx="7" fill="#fffae0" stroke="#9a3412" stroke-width="2"/>
+<text x="310" y="256" font-size="11" font-weight="800" fill="#9a3412">Denied</text>
+<text x="310" y="270" font-size="9" font-weight="600" fill="#5c4a30">fails closed</text>
+<rect x="12.5" y="300.5" width="338" height="28" rx="7" fill="#1a1209"/><rect x="10" y="298" width="338" height="28" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="179" y="316" font-size="9.5" font-weight="800" fill="#3a1d70"><tspan class="mono">audit.jsonl</tspan><tspan font-weight="600" fill="#5c4a30">: action, decision, who, when</tspan></text>
+</g>
+<g stroke="#1a1209" stroke-width="2" fill="none" marker-end="url(#ag-a)">
+<path d="M180 52.5V75.5"/>
+<path d="M120 124.5V140H70V163.5"/>
+<path d="M240 124.5V140H266.5V163.5"/>
+<path d="M213 210.5V237.5"/>
+<path d="M70 210.5V295.5"/>
+<path d="M213 278.5V295.5"/>
+<path d="M310 278.5V295.5"/>
+</g>
+<path d="M310 210.5V237.5" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#ag-r)"/>
+<g font-size="9" font-weight="800">
+<text x="76" y="152" fill="#1a1209">yes</text>
+<text x="246" y="152" fill="#1a1209">no</text>
+<text x="219" y="229" fill="#1a1209">y</text>
+<text x="301" y="229" text-anchor="end" fill="#9a3412">n or no answer</text>
+</g>
+</svg>

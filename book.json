@@ -188,6 +188,15 @@
       "domains": [
         "4.0"
       ]
+    },
+    "preview-obj-1.2-1.3": {
+      "file": "preview-obj-1.2-1.3",
+      "topics": [
+        "domain-1/1.2-data-processing.md",
+        "domain-1/1.2-watermarking-and-rag.md",
+        "domain-1/1.3-ai-life-cycle.md",
+        "domain-1/1.3-human-centric-design.md"
+      ]
     }
   }
 }
