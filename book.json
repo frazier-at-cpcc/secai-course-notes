@@ -188,6 +188,15 @@
       "domains": [
         "4.0"
       ]
+    },
+    "preview-obj-2.1-2.2": {
+      "file": "preview-obj-2.1-2.2",
+      "topics": [
+        "domain-2/2.1-owasp-top-10.md",
+        "domain-2/2.1-threat-modeling-resources.md",
+        "domain-2/2.2-model-controls.md",
+        "domain-2/2.2-gateway-controls.md"
+      ]
     }
   }
 }
