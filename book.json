@@ -188,6 +188,17 @@
       "domains": [
         "4.0"
       ]
+    },
+    "preview-obj-4": {
+      "file": "preview-obj-4",
+      "topics": [
+        "domain-4/4.1-governance-structures.md",
+        "domain-4/4.1-ai-roles.md",
+        "domain-4/4.2-responsible-ai.md",
+        "domain-4/4.2-ai-risks.md",
+        "domain-4/4.3-regulations-and-standards.md",
+        "domain-4/4.3-corporate-policies.md"
+      ]
     }
   }
 }

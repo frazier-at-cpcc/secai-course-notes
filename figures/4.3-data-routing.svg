@@ -1,0 +1,57 @@
+<svg viewBox="0 0 760 252" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An AI gateway classifies each prompt and routes it to a model tier approved for that data class, or blocks it">
+<defs><marker id="dr-i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker><marker id="dr-p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6d28d9"/></marker><marker id="dr-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9a3412"/></marker></defs>
+<rect x="10.5" y="86.5" width="96" height="60" rx="7" fill="#1a1209"/>
+<rect x="8" y="84" width="96" height="60" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="56.0" y="112.3" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Prompt</text>
+<text x="56.0" y="124.4" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">plus any files</text>
+<path d="M104 114H131" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#dr-i)"/>
+<rect x="136.5" y="74.5" width="150" height="84" rx="7" fill="#1a1209"/>
+<rect x="134" y="72" width="150" height="84" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="209.0" y="95.4" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">AI gateway</text>
+<text x="209.0" y="107.5" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">classify the content</text>
+<text x="209.0" y="118.8" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">redact what policy</text>
+<text x="209.0" y="130.1" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">allows; block secrets</text>
+<text x="209.0" y="141.3" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">log the decision</text>
+<path d="M284 114H302V25H323" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#dr-i)"/>
+<rect x="326" y="6" width="150" height="38" rx="7" fill="#fff" stroke="#1a1209" stroke-width="1.5"/>
+<text x="401" y="29" text-anchor="middle" font-size="10" font-weight="800" fill="#1a1209" letter-spacing="0.8">PUBLIC</text>
+<path d="M476 25H515" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#dr-i)"/>
+<rect x="520.5" y="8.5" width="234" height="38" rx="7" fill="#1a1209"/>
+<rect x="518" y="6" width="234" height="38" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="635.0" y="22.9" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Public or enterprise model</text>
+<text x="635.0" y="34.8" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">any approved tool</text>
+<path d="M284 114H302V71H323" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#dr-i)"/>
+<rect x="326" y="52" width="150" height="38" rx="7" fill="#fff" stroke="#1a1209" stroke-width="1.5"/>
+<text x="401" y="75" text-anchor="middle" font-size="10" font-weight="800" fill="#1a1209" letter-spacing="0.8">INTERNAL</text>
+<path d="M476 71H515" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#dr-i)"/>
+<rect x="520.5" y="54.5" width="234" height="38" rx="7" fill="#1a1209"/>
+<rect x="518" y="52" width="234" height="38" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="635.0" y="69.0" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Enterprise tenant</text>
+<text x="635.0" y="80.8" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">no-training contract, SSO</text>
+<path d="M284 114H302V117H323" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#dr-i)"/>
+<rect x="326" y="98" width="150" height="38" rx="7" fill="#fff" stroke="#1a1209" stroke-width="1.5"/>
+<text x="401" y="121" text-anchor="middle" font-size="10" font-weight="800" fill="#1a1209" letter-spacing="0.8">CONFIDENTIAL</text>
+<path d="M476 117H515" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#dr-i)"/>
+<rect x="520.5" y="100.5" width="234" height="38" rx="7" fill="#1a1209"/>
+<rect x="518" y="98" width="234" height="38" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="635.0" y="115.0" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Enterprise tenant, home region</text>
+<text x="635.0" y="126.8" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">regional processing pinned</text>
+<path d="M284 114H302V163H323" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#dr-i)"/>
+<rect x="326" y="144" width="150" height="38" rx="7" fill="#fff" stroke="#1a1209" stroke-width="1.5"/>
+<text x="401" y="167" text-anchor="middle" font-size="10" font-weight="800" fill="#1a1209" letter-spacing="0.8">RESTRICTED</text>
+<path d="M476 163H515" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#dr-i)"/>
+<rect x="520.5" y="146.5" width="234" height="38" rx="7" fill="#1a1209"/>
+<rect x="518" y="144" width="234" height="38" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="635.0" y="160.9" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Self-hosted private model</text>
+<text x="635.0" y="172.8" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">data never leaves</text>
+<path d="M284 114H302V209H323" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#dr-r)"/>
+<rect x="326" y="190" width="150" height="38" rx="7" fill="#fff" stroke="#9a3412" stroke-width="1.5"/>
+<text x="401" y="213" text-anchor="middle" font-size="10" font-weight="800" fill="#9a3412" letter-spacing="0.8">SECRETS, CARD DATA</text>
+<path d="M476 209H515" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#dr-r)"/>
+<rect x="520.5" y="192.5" width="234" height="38" rx="7" fill="#1a1209"/>
+<rect x="518" y="190" width="234" height="38" rx="7" fill="#fffae0" stroke="#9a3412" stroke-width="2"/>
+<text x="635.0" y="206.9" text-anchor="middle" font-size="11" font-weight="800" fill="#9a3412">Blocked</text>
+<text x="635.0" y="218.8" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">user coached, event logged</text>
+<text x="401" y="244" text-anchor="middle" font-size="9.5" font-weight="800" fill="#5c4a30" letter-spacing="1.2">DATA CLASS</text>
+<text x="635" y="244" text-anchor="middle" font-size="9.5" font-weight="800" fill="#5c4a30" letter-spacing="1.2">ALLOWED DESTINATION</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sanctioned AI path through SSO and an AI gateway to an enterprise tenant, compared with shadow AI going straight to a public service">
+<defs><marker id="sh-i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker><marker id="sh-p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6d28d9"/></marker><marker id="sh-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9a3412"/></marker></defs>
+<rect x="8" y="20" width="430" height="174" rx="9" fill="none" stroke="#5c4a30" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="18" y="14" text-anchor="start" font-size="9.5" font-weight="800" fill="#5c4a30" letter-spacing="1.4">COMPANY BOUNDARY</text>
+<text x="472" y="14" text-anchor="start" font-size="9.5" font-weight="800" fill="#5c4a30" letter-spacing="1.4">OUTSIDE</text>
+<text x="26" y="40" text-anchor="start" font-size="10" font-weight="800" fill="#6d28d9" letter-spacing="1.2">SANCTIONED</text>
+<rect x="28.5" y="52.5" width="100" height="50" rx="7" fill="#1a1209"/>
+<rect x="26" y="50" width="100" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="76.0" y="73.3" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Analyst</text>
+<text x="76.0" y="85.4" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">work account</text>
+<path d="M126 75H153" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#sh-i)"/>
+<rect x="158.5" y="52.5" width="80" height="50" rx="7" fill="#1a1209"/>
+<rect x="156" y="50" width="80" height="50" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="196.0" y="73.3" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">SSO</text>
+<text x="196.0" y="85.4" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">who, which app</text>
+<path d="M236 75H263" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#sh-i)"/>
+<rect x="268.5" y="46.5" width="150" height="62" rx="7" fill="#1a1209"/>
+<rect x="266" y="44" width="150" height="62" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="341.0" y="62.0" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">AI gateway</text>
+<text x="341.0" y="74.2" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">DLP and redaction</text>
+<text x="341.0" y="85.4" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">logging, quotas</text>
+<text x="341.0" y="96.7" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">route by data class</text>
+<path d="M416 75H515" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#sh-i)"/>
+<rect x="520.5" y="46.5" width="234" height="62" rx="7" fill="#1a1209"/>
+<rect x="518" y="44" width="234" height="62" rx="7" fill="#fffae0" stroke="#1a1209" stroke-width="2"/>
+<text x="635.0" y="67.7" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Enterprise AI tenant</text>
+<text x="635.0" y="79.8" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">contract: no training</text>
+<text x="635.0" y="91.0" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">set retention, region pinned</text>
+<text x="26" y="126" text-anchor="start" font-size="10" font-weight="800" fill="#9a3412" letter-spacing="1.2">SHADOW AI</text>
+<rect x="28.5" y="136.5" width="100" height="50" rx="7" fill="#1a1209"/>
+<rect x="26" y="134" width="100" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="76.0" y="157.3" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Analyst</text>
+<text x="76.0" y="169.4" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">personal account</text>
+<rect x="156" y="130" width="260" height="58" rx="7" fill="#fff" stroke="#9a3412" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="286.0" y="150.4" text-anchor="middle" font-size="10" font-weight="700" fill="#1a1209">Browser extension, free chatbot,</text>
+<text x="286.0" y="162.9" text-anchor="middle" font-size="10" font-weight="700" fill="#1a1209">AI feature switched on in a SaaS app</text>
+<text x="286.0" y="174.4" text-anchor="middle" font-size="9" font-weight="800" fill="#9a3412">no SSO, no DLP, no log</text>
+<path d="M126 159H153" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#sh-r)"/>
+<path d="M416 159H515" fill="none" stroke="#9a3412" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#sh-r)"/>
+<rect x="520.5" y="130.5" width="234" height="62" rx="7" fill="#1a1209"/>
+<rect x="518" y="128" width="234" height="62" rx="7" fill="#fff" stroke="#9a3412" stroke-width="2"/>
+<text x="635.0" y="151.7" text-anchor="middle" font-size="12" font-weight="800" fill="#9a3412">Public AI service</text>
+<text x="635.0" y="163.8" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">consumer terms: may retain</text>
+<text x="635.0" y="175.1" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">or train on prompts</text>
+</svg>

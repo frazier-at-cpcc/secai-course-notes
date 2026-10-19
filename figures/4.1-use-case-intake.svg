@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 258" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI use-case intake: request, triage into four risk tiers, approval by tier, inventory, production, and periodic review back to triage">
+<defs><marker id="in-i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker><marker id="in-p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6d28d9"/></marker><marker id="in-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9a3412"/></marker></defs>
+<rect x="10.5" y="89.5" width="104" height="60" rx="7" fill="#1a1209"/>
+<rect x="8" y="87" width="104" height="60" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="60.0" y="109.7" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Request</text>
+<text x="60.0" y="121.8" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">business owner</text>
+<text x="60.0" y="133.1" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">describes use</text>
+<rect x="142.5" y="83.5" width="110" height="72" rx="7" fill="#1a1209"/>
+<rect x="140" y="81" width="110" height="72" rx="7" fill="#fffae0" stroke="#1a1209" stroke-width="2"/>
+<text x="195.0" y="104.0" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Triage</text>
+<text x="195.0" y="116.2" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">data class</text>
+<text x="195.0" y="127.4" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">who is affected</text>
+<text x="195.0" y="138.7" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">autonomy level</text>
+<path d="M112 117H137" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#in-i)"/>
+<rect x="286.5" y="10.5" width="236" height="48" rx="7" fill="#1a1209"/>
+<rect x="284" y="8" width="236" height="48" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="402.0" y="24.2" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">LOW</text>
+<text x="402.0" y="35.9" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">internal data, human checks output</text>
+<text x="402.0" y="47.1" text-anchor="middle" font-size="9" font-weight="700" fill="#1a1209">CoE checklist</text>
+<path d="M250 117H266V32H281" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#in-i)"/>
+<path d="M520 32H540V117" fill="none" stroke="#1a1209" stroke-width="2"/>
+<rect x="286.5" y="68.5" width="236" height="48" rx="7" fill="#1a1209"/>
+<rect x="284" y="66" width="236" height="48" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="402.0" y="82.2" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">MEDIUM</text>
+<text x="402.0" y="93.9" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">confidential data or customer-facing</text>
+<text x="402.0" y="105.1" text-anchor="middle" font-size="9" font-weight="700" fill="#1a1209">security and privacy review</text>
+<path d="M250 117H266V90H281" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#in-i)"/>
+<path d="M520 90H540V117" fill="none" stroke="#1a1209" stroke-width="2"/>
+<rect x="286.5" y="126.5" width="236" height="48" rx="7" fill="#1a1209"/>
+<rect x="284" y="124" width="236" height="48" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="402.0" y="140.2" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">HIGH</text>
+<text x="402.0" y="151.9" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">decisions about people, or agents</text>
+<text x="402.0" y="163.1" text-anchor="middle" font-size="9" font-weight="700" fill="#1a1209">committee plus impact assessment</text>
+<path d="M250 117H266V148H281" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#in-i)"/>
+<path d="M520 148H540V117" fill="none" stroke="#1a1209" stroke-width="2"/>
+<rect x="286.5" y="184.5" width="236" height="48" rx="7" fill="#1a1209"/>
+<rect x="284" y="182" width="236" height="48" rx="7" fill="#fffae0" stroke="#9a3412" stroke-width="2"/>
+<text x="402.0" y="198.2" text-anchor="middle" font-size="10.5" font-weight="800" fill="#9a3412">PROHIBITED</text>
+<text x="402.0" y="209.9" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">banned by policy or law</text>
+<text x="402.0" y="221.1" text-anchor="middle" font-size="9" font-weight="700" fill="#1a1209">rejected and recorded</text>
+<path d="M250 117H266V206H281" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#in-i)"/>
+<path d="M540 117H557" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#in-i)"/>
+<rect x="562.5" y="89.5" width="86" height="60" rx="7" fill="#1a1209"/>
+<rect x="560" y="87" width="86" height="60" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="603.0" y="109.7" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Inventory</text>
+<text x="603.0" y="121.8" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">owner, tier,</text>
+<text x="603.0" y="133.1" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">review date</text>
+<path d="M646 117H664" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#in-i)"/>
+<rect x="669.5" y="89.5" width="86" height="60" rx="7" fill="#1a1209"/>
+<rect x="667" y="87" width="86" height="60" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="710.0" y="109.7" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">Production</text>
+<text x="710.0" y="121.8" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">controls on,</text>
+<text x="710.0" y="133.1" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">monitored</text>
+<path d="M710 150V250H195V156" fill="none" stroke="#6d28d9" stroke-width="2" marker-end="url(#in-p)"/>
+<text x="452" y="245" text-anchor="middle" font-size="9.5" font-weight="700" fill="#6d28d9">periodic review, drift, incidents, model or vendor change: back to triage</text>
+</svg>
