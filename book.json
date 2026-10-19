@@ -188,6 +188,15 @@
       "domains": [
         "4.0"
       ]
+    },
+    "preview-obj-2.5-3.3": {
+      "file": "preview-obj-2.5-3.3",
+      "topics": [
+        "domain-2/2.5-prompt-and-log-monitoring.md",
+        "domain-2/2.5-cost-and-auditing.md",
+        "domain-3/3.3-ai-automation.md",
+        "domain-3/3.3-ai-in-cicd.md"
+      ]
     }
   }
 }

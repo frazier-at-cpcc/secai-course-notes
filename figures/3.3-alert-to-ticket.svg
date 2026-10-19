@@ -1,0 +1,53 @@
+<svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An EDR alert goes to a language model that drafts a ticket under a JSON schema; code parses, validates, and grounds the draft, rejects failures, and sends high-severity actions to an analyst for approval">
+<defs>
+<marker id="at-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker>
+<marker id="at-rust" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9a3412"/></marker>
+</defs>
+<g text-anchor="middle">
+<!-- 1 alert -->
+<rect x="7.5" y="22.5" width="118" height="84" rx="7" fill="#1a1209"/><rect x="5" y="20" width="118" height="84" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="64" y="52" font-size="12.5" font-weight="800" fill="#1a1209">EDR alert</text>
+<text x="64" y="68" font-size="9" font-weight="600" fill="#5c4a30">raw text: host, user,</text>
+<text x="64" y="80" font-size="9" font-weight="600" fill="#5c4a30">process, connection</text>
+<!-- 2 llm -->
+<rect x="147.5" y="22.5" width="118" height="84" rx="7" fill="#1a1209"/><rect x="145" y="20" width="118" height="84" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="204" y="52" font-size="12.5" font-weight="800" fill="#fff">LLM drafts</text>
+<text x="204" y="68" font-size="9" font-weight="600" fill="#efe6ff">output constrained</text>
+<text x="204" y="80" font-size="9" font-weight="600" fill="#efe6ff">by a JSON schema</text>
+<!-- 3 checks -->
+<rect x="287.5" y="22.5" width="124" height="84" rx="7" fill="#1a1209"/><rect x="285" y="20" width="124" height="84" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="347" y="42" font-size="12.5" font-weight="800" fill="#1a1209">Code checks</text>
+<text x="347" y="60" font-size="9.5" font-weight="700" fill="#1a1209">1. parses as JSON</text>
+<text x="347" y="74" font-size="9.5" font-weight="700" fill="#1a1209">2. matches schema</text>
+<text x="347" y="88" font-size="9.5" font-weight="700" fill="#1a1209">3. values in alert</text>
+<!-- 4 ticket -->
+<rect x="433.5" y="22.5" width="110" height="84" rx="7" fill="#1a1209"/><rect x="431" y="20" width="110" height="84" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="486" y="52" font-size="12.5" font-weight="800" fill="#1a1209">Ticket</text>
+<text x="486" y="68" font-size="9" font-weight="600" fill="#5c4a30">severity sets</text>
+<text x="486" y="80" font-size="9" font-weight="600" fill="#5c4a30">the next step</text>
+<!-- 5 approval -->
+<rect x="615.5" y="22.5" width="138" height="84" rx="7" fill="#1a1209"/><rect x="613" y="20" width="138" height="84" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="682" y="48" font-size="12.5" font-weight="800" fill="#1a1209">Analyst</text>
+<text x="682" y="63" font-size="12.5" font-weight="800" fill="#1a1209">approves</text>
+<text x="682" y="80" font-size="9" font-weight="600" fill="#5c4a30">then isolate host</text>
+<!-- branch boxes -->
+<rect x="294.5" y="145.5" width="110" height="44" rx="7" fill="#1a1209"/><rect x="292" y="143" width="110" height="44" rx="7" fill="#fff" stroke="#9a3412" stroke-width="2"/>
+<text x="347" y="162" font-size="11" font-weight="800" fill="#9a3412">Rejected</text>
+<text x="347" y="177" font-size="9" font-weight="600" fill="#5c4a30">logged for review</text>
+<rect x="433.5" y="145.5" width="110" height="44" rx="7" fill="#1a1209"/><rect x="431" y="143" width="110" height="44" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="486" y="162" font-size="11" font-weight="800" fill="#1a1209">Queue</text>
+<text x="486" y="177" font-size="9" font-weight="600" fill="#5c4a30">next shift</text>
+<!-- labels -->
+<text x="355" y="128" text-anchor="start" font-size="9" font-weight="700" fill="#9a3412">any check fails</text>
+<text x="494" y="128" text-anchor="start" font-size="9" font-weight="700" fill="#1a1209">low, medium</text>
+<text x="577" y="55" font-size="9" font-weight="700" fill="#1a1209">high, critical</text>
+</g>
+<g stroke="#1a1209" stroke-width="2" fill="none" marker-end="url(#at-ink)">
+<path d="M123 62H141"/>
+<path d="M263 62H281"/>
+<path d="M409 62H427"/>
+<path d="M541 62H609"/>
+<path d="M486 106V139"/>
+</g>
+<path d="M347 106V139" stroke="#9a3412" stroke-width="2" fill="none" marker-end="url(#at-rust)"/>
+</svg>
