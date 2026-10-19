@@ -188,6 +188,14 @@
       "domains": [
         "4.0"
       ]
+    },
+    "preview-obj-2.6": {
+      "file": "preview-obj-2.6",
+      "topics": [
+        "domain-2/2.6-prompt-attacks.md",
+        "domain-2/2.6-model-and-data-attacks.md",
+        "domain-2/2.6-compensating-controls.md"
+      ]
     }
   }
 }
