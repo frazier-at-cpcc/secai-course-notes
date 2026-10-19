@@ -1,0 +1,52 @@
+name: Command tests
+
+# Runs every test script in tests/ against the commands shown in the notes.
+# Manual only: start it from the Actions tab before a release or after a tool
+# update. It does not gate the PDF build.
+on:
+  workflow_dispatch:
+    inputs:
+      pattern:
+        description: 'Tests to run (glob under tests/)'
+        default: '*.sh'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install test tools
+        run: |
+          npm ci
+          pip install -r tests/requirements.txt
+
+      - name: Run the selected tests
+        env:
+          PATTERN: ${{ inputs.pattern }}
+        run: |
+          fail=0
+          for t in tests/${PATTERN:-*.sh}; do
+            echo "::group::$t"
+            start=$(date +%s)
+            # Tests reproduce what a student sees in a terminal; hide the CI
+            # markers that make tools switch output format.
+            if env -u CI -u GITHUB_ACTIONS -u GITHUB_WORKFLOW bash "$t"; then echo "PASS $t ($(( $(date +%s) - start ))s)"; else echo "::error::$t failed"; fail=1; fi
+            echo "::endgroup::"
+          done
+          exit $fail

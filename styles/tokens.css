@@ -1,0 +1,46 @@
+/* Copied verbatim from frazier-at-cpcc/vfrazier-app src/styles/tokens.css.
+   Keep in sync with the site: scripts/sync-tokens.sh pulls the latest copy. */
+:root {
+  /* Palette */
+  --ink: #1a1209;
+  --ink-2: #2a1d10;
+  --muted: #5c4a30;
+  --page: #ebe9e6;
+  --card: #ffffff;
+  --accent: #6d28d9;
+  --accent-soft: #efe6ff;
+  --accent-light: #c4b3ff;
+  --accent-deep: #3a1d70;
+  --highlight: #ffd60a;
+  --highlight-soft: #fffae0;
+  --border: #1a1209;
+  --footer-text: #d4c9b4;
+  --footer-dim: #8a7558;
+
+  /* Typography */
+  --font-sans: 'Inter Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  /* Sizing */
+  --container-max: 1100px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-pill: 99px;
+
+  /* Shadows */
+  --shadow-card: 4px 4px 0 var(--ink);
+  --shadow-card-accent: 4px 4px 0 var(--accent);
+  --shadow-hero: 10px 10px 0 var(--ink);
+  --shadow-about: 8px 8px 0 var(--accent);
+
+  /* Spacing */
+  --space-section: 70px;
+  --space-page-x: 40px;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --space-section: 48px;
+    --space-page-x: 22px;
+  }
+}
