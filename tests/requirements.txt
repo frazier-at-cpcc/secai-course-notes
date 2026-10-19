@@ -1,1 +1,15 @@
-requests==2.32.5
+# Python packages the test scripts use, at the versions the notes were run with.
+# The PDF build does not need any of them.
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+joblib==1.6.0
+cryptography==50.0.1
+picklescan==1.0.5
+safetensors==0.8.0
+mcp==2.2.0
+yara-python==4.5.4
+jsonschema==4.26.0
+pytest==9.1.1
+bandit==1.9.4
+pip-audit==2.10.1
