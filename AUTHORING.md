@@ -153,5 +153,5 @@ pdftoppm -r 80 -png dist/<file>.pdf /tmp/page
 
 Look at every page you produced. Check for text overflowing figures or tables,
 columns left empty, a lone heading at the bottom of a column, and code lines
-wrapping badly (keep code lines under about 52 characters so they fit a
+wrapping badly (keep code lines under 48 characters so they fit a
 column).

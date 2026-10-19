@@ -44,11 +44,16 @@ function makeMarked() {
         const labelAttr = label ? ` data-label="${esc(label)}"` : '';
         let body;
         if (language === 'console') {
-          // "$ cmd" lines are commands; everything else is output.
+          // "$ cmd" lines are commands; a command ending in "\" continues on
+          // the next line; everything else is output.
+          let continued = false;
           body = text.split('\n').map((line) => {
-            if (line.startsWith('$ ')) {
-              const cmd = hljs.highlight(line.slice(2), { language: 'bash' }).value;
-              return `<span class="prompt">$ </span>${cmd}`;
+            const isCmd = line.startsWith('$ ') || continued;
+            continued = isCmd && /\\$/.test(line);
+            if (isCmd) {
+              const src = line.startsWith('$ ') ? line.slice(2) : line;
+              const cmd = hljs.highlight(src, { language: 'bash' }).value;
+              return line.startsWith('$ ') ? `<span class="prompt">$ </span>${cmd}` : cmd;
             }
             return `<span class="out">${esc(line)}</span>`;
           }).join('\n');
