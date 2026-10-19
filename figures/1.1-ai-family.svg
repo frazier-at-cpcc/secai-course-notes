@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nested families of AI: artificial intelligence contains machine learning, which contains deep learning, which contains transformers, which contain large and small language models; GANs sit inside deep learning; generative models are marked">
+  <!-- Artificial intelligence -->
+  <rect x="8.5" y="10.5" width="742" height="196" rx="7" fill="#1a1209"/>
+  <rect x="6" y="8" width="742" height="196" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+  <text x="20" y="32" font-size="13" font-weight="800" fill="#1a1209">Artificial intelligence</text>
+  <text x="20" y="48" font-size="9" font-weight="600" fill="#5c4a30">rules, search, expert systems,</text>
+  <text x="20" y="60" font-size="9" font-weight="600" fill="#5c4a30">SIEM correlation rules</text>
+  <!-- Machine learning -->
+  <rect x="172.5" y="24.5" width="568" height="172" rx="7" fill="#1a1209"/>
+  <rect x="170" y="22" width="568" height="172" rx="7" fill="#fffae0" stroke="#1a1209" stroke-width="2"/>
+  <text x="184" y="46" font-size="13" font-weight="800" fill="#1a1209">Machine learning</text>
+  <text x="184" y="61" font-size="9" font-weight="600" fill="#5c4a30">learns patterns from data</text>
+  <text x="184" y="84" font-size="9.5" font-weight="800" fill="#1a1209">Statistical learning</text>
+  <text x="184" y="97" font-size="9" font-weight="600" fill="#5c4a30">regression, naive Bayes,</text>
+  <text x="184" y="109" font-size="9" font-weight="600" fill="#5c4a30">decision trees, SVMs</text>
+  <text x="184" y="132" font-size="9.5" font-weight="800" fill="#1a1209">Unsupervised</text>
+  <text x="184" y="145" font-size="9" font-weight="600" fill="#5c4a30">clustering, isolation</text>
+  <text x="184" y="157" font-size="9" font-weight="600" fill="#5c4a30">forest anomaly scores</text>
+  <!-- Deep learning -->
+  <rect x="347.5" y="38.5" width="383" height="148" rx="7" fill="#1a1209"/>
+  <rect x="345" y="36" width="383" height="148" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+  <text x="359" y="60" font-size="13" font-weight="800" fill="#1a1209">Deep learning</text>
+  <text x="359" y="75" font-size="9" font-weight="600" fill="#5c4a30">many-layer neural</text>
+  <text x="359" y="87" font-size="9" font-weight="600" fill="#5c4a30">networks</text>
+  <!-- GANs -->
+  <rect x="361.5" y="114.5" width="106" height="56" rx="7" fill="#1a1209"/>
+  <rect x="359" y="112" width="106" height="56" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+  <g text-anchor="middle">
+    <text x="412" y="133" font-size="12" font-weight="800" fill="#1a1209">GANs</text>
+    <text x="412" y="147" font-size="9" font-weight="700" fill="#1a1209">generator vs</text>
+    <text x="412" y="158" font-size="9" font-weight="700" fill="#1a1209">discriminator</text>
+  </g>
+  <!-- Transformers -->
+  <rect x="487.5" y="52.5" width="231" height="122" rx="7" fill="#1a1209"/>
+  <rect x="485" y="50" width="231" height="122" rx="7" fill="#c4b3ff" stroke="#1a1209" stroke-width="2"/>
+  <text x="499" y="74" font-size="13" font-weight="800" fill="#1a1209">Transformers</text>
+  <text x="499" y="89" font-size="9" font-weight="600" fill="#3a1d70">self-attention over a sequence</text>
+  <!-- LLMs and SLMs -->
+  <rect x="501.5" y="106.5" width="98" height="54" rx="7" fill="#1a1209"/>
+  <rect x="499" y="104" width="98" height="54" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+  <rect x="611.5" y="106.5" width="94" height="54" rx="7" fill="#1a1209"/>
+  <rect x="609" y="104" width="94" height="54" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+  <g text-anchor="middle">
+    <text x="548" y="125" font-size="12" font-weight="800" fill="#1a1209">LLMs</text>
+    <text x="548" y="139" font-size="9" font-weight="700" fill="#1a1209">huge, general,</text>
+    <text x="548" y="150" font-size="9" font-weight="700" fill="#1a1209">usually hosted</text>
+    <text x="656" y="125" font-size="12" font-weight="800" fill="#1a1209">SLMs</text>
+    <text x="656" y="139" font-size="9" font-weight="700" fill="#1a1209">small, cheap,</text>
+    <text x="656" y="150" font-size="9" font-weight="700" fill="#1a1209">run locally</text>
+  </g>
+  <!-- legend -->
+  <rect x="8" y="219" width="16" height="12" rx="2" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/>
+  <text x="32" y="229" font-size="9.5" font-weight="800" fill="#1a1209">GENERATIVE AI <tspan font-weight="600" fill="#5c4a30">creates new content: GANs, LLMs, SLMs, and diffusion models</tspan></text>
+  <rect x="8" y="237" width="16" height="12" rx="2" fill="#fff" stroke="#6d28d9" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="32" y="247" font-size="9.5" font-weight="800" fill="#6d28d9">NLP <tspan font-weight="600" fill="#5c4a30">names a task area that spans every level, from regex rules to LLMs</tspan></text>
+</svg>

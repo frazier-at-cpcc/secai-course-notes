@@ -188,6 +188,14 @@
       "domains": [
         "4.0"
       ]
+    },
+    "preview-obj-1.1": {
+      "file": "preview-obj-1.1",
+      "topics": [
+        "domain-1/1.1-ai-types.md",
+        "domain-1/1.1-model-training.md",
+        "domain-1/1.1-prompt-engineering.md"
+      ]
     }
   }
 }
