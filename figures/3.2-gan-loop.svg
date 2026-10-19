@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 206" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A generative adversarial network: the generator turns noise into fakes, the discriminator compares them with real samples, and its verdicts train the generator">
+<defs><marker id="ga" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker>
+<marker id="gr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9a3412"/></marker></defs>
+<!-- noise -->
+<rect x="10.5" y="44.5" width="70" height="40" rx="7" fill="#1a1209"/>
+<rect x="8" y="42" width="70" height="40" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="43" y="59" text-anchor="middle" font-size="10" font-weight="800" fill="#1a1209">Random</text>
+<text x="43" y="72" text-anchor="middle" font-size="10" font-weight="800" fill="#1a1209">noise</text>
+<!-- generator -->
+<rect x="102.5" y="38.5" width="104" height="52" rx="7" fill="#1a1209"/>
+<rect x="100" y="36" width="104" height="52" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="152" y="58" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Generator</text>
+<text x="152" y="73" text-anchor="middle" font-size="9" font-weight="700" fill="#1a1209">makes fakes</text>
+<!-- real samples -->
+<rect x="102.5" y="144.5" width="104" height="52" rx="7" fill="#1a1209"/>
+<rect x="100" y="142" width="104" height="52" rx="7" fill="#fffae0" stroke="#1a1209" stroke-width="2"/>
+<text x="152" y="164" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Real samples</text>
+<text x="152" y="179" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">photos, voice clips</text>
+<!-- discriminator -->
+<rect x="240.5" y="88.5" width="112" height="58" rx="7" fill="#1a1209"/>
+<rect x="238" y="86" width="112" height="58" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="294" y="110" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">Discriminator</text>
+<text x="294" y="126" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">real or fake?</text>
+<g stroke="#1a1209" stroke-width="2" fill="none" marker-end="url(#ga)">
+<path d="M78 62H97"/>
+<path d="M204 62H221V106H235"/>
+<path d="M204 168H221V126H235"/>
+</g>
+<text x="225" y="80" font-size="8.5" font-weight="700" fill="#5c4a30">fake</text>
+<text x="225" y="160" font-size="8.5" font-weight="700" fill="#5c4a30">real</text>
+<!-- feedback -->
+<path d="M294 86V18H152V33" fill="none" stroke="#9a3412" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#gr)"/>
+<text x="223" y="12" text-anchor="middle" font-size="9" font-weight="800" fill="#9a3412">feedback: which fakes got caught</text>
+<text x="300" y="168" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">done when it is</text>
+<text x="300" y="180" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">right only half</text>
+<text x="300" y="192" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">the time</text>
+</svg>

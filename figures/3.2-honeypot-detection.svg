@@ -1,0 +1,47 @@
+<svg viewBox="0 0 760 206" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An AI attack agent probes an LLM-backed honeypot that feeds the SOC; each side has tells the other side can detect">
+<defs><marker id="ha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker></defs>
+<!-- agent -->
+<rect x="8.5" y="12.5" width="196" height="62" rx="7" fill="#1a1209"/>
+<rect x="6" y="10" width="196" height="62" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="104" y="34" text-anchor="middle" font-size="12" font-weight="800" fill="#9a3412">AI attack agent</text>
+<text x="104" y="50" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">scans, logs in, runs commands,</text>
+<text x="104" y="62" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">decides the next step itself</text>
+<!-- honeypot -->
+<rect x="284.5" y="12.5" width="196" height="62" rx="7" fill="#1a1209"/>
+<rect x="282" y="10" width="196" height="62" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="380" y="34" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">LLM-backed honeypot</text>
+<text x="380" y="50" text-anchor="middle" font-size="9" font-weight="700" fill="#1a1209">decoy SSH or web service;</text>
+<text x="380" y="62" text-anchor="middle" font-size="9" font-weight="700" fill="#1a1209">a model invents believable output</text>
+<!-- soc -->
+<rect x="560.5" y="12.5" width="196" height="62" rx="7" fill="#1a1209"/>
+<rect x="558" y="10" width="196" height="62" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="656" y="34" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">SOC</text>
+<text x="656" y="50" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">IOCs, tools, techniques,</text>
+<text x="656" y="62" text-anchor="middle" font-size="9" font-weight="700" fill="#efe6ff">ATT&amp;CK labels, alerts</text>
+<path d="M206 41H278" stroke="#1a1209" stroke-width="2" fill="none" marker-start="url(#ha)" marker-end="url(#ha)"/>
+<path d="M482 41H554" stroke="#1a1209" stroke-width="2" fill="none" marker-end="url(#ha)"/>
+<text x="242" y="33" text-anchor="middle" font-size="8.5" font-weight="700" fill="#5c4a30">probes</text>
+<text x="518" y="33" text-anchor="middle" font-size="8.5" font-weight="700" fill="#5c4a30">session logs</text>
+<!-- tells: attacker view -->
+<rect x="8.5" y="96.5" width="362" height="102" rx="7" fill="#1a1209"/>
+<rect x="6" y="94" width="362" height="102" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="20" y="114" font-size="10.5" font-weight="800" fill="#9a3412">How an attacker spots the honeypot</text>
+<g font-size="9" font-weight="600" fill="#1a1209">
+<text x="20" y="132">Default banners, hostnames, and file listings</text>
+<text x="20" y="147">Output that contradicts earlier commands in the session</text>
+<text x="20" y="162">Reply delay too slow, or too uniform, for a real host</text>
+<text x="20" y="177">Downloads and outbound connections that never happen</text>
+<text x="20" y="192" fill="#5c4a30">ML classifiers on these features automate the check</text>
+</g>
+<!-- tells: defender view -->
+<rect x="394.5" y="96.5" width="362" height="102" rx="7" fill="#1a1209"/>
+<rect x="392" y="94" width="362" height="102" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="406" y="114" font-size="10.5" font-weight="800" fill="#3a1d70">How the honeypot spots an AI agent</text>
+<g font-size="9" font-weight="600" fill="#1a1209">
+<text x="406" y="132">Follows instructions planted in a banner or file</text>
+<text x="406" y="147">Answers within about two seconds, every time</text>
+<text x="406" y="162">Reads long output faster than a person could</text>
+<text x="406" y="177">Asked, it may reveal its own system prompt</text>
+<text x="406" y="192" fill="#5c4a30">Shown in Palisade Research's LLM Agent Honeypot</text>
+</g>
+</svg>
