@@ -1,0 +1,45 @@
+<svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isolation Forest: an outlying login is isolated by two random cuts while a typical login inside the cluster needs many cuts">
+<!-- plot area -->
+<rect x="10.5" y="12.5" width="214" height="196" rx="7" fill="#1a1209"/>
+<rect x="8" y="10" width="214" height="196" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<rect x="160" y="11" width="61" height="66" fill="#fffae0"/>
+<!-- many cuts around the normal point -->
+<g stroke="#c4b3ff" stroke-width="1.5">
+<path d="M60 96V182"/><path d="M78 96V182"/><path d="M94 96V182"/><path d="M112 96V182"/>
+<path d="M40 112H140"/><path d="M40 126H140"/><path d="M40 142H140"/><path d="M40 160H140"/>
+</g>
+<!-- two cuts that isolate the outlier -->
+<g stroke="#6d28d9" stroke-width="2" stroke-dasharray="5 3">
+<path d="M160 11V205"/>
+<path d="M160 77H221"/>
+</g>
+<text x="164" y="198" font-size="9" font-weight="800" fill="#6d28d9">cut 1</text>
+<text x="183" y="90" font-size="9" font-weight="800" fill="#6d28d9">cut 2</text>
+<!-- normal cluster -->
+<g fill="#5c4a30">
+<circle cx="52" cy="120" r="3"/><circle cx="66" cy="104" r="3"/><circle cx="70" cy="134" r="3"/>
+<circle cx="84" cy="116" r="3"/><circle cx="100" cy="106" r="3"/><circle cx="104" cy="150" r="3"/>
+<circle cx="120" cy="120" r="3"/><circle cx="56" cy="152" r="3"/><circle cx="88" cy="168" r="3"/>
+<circle cx="126" cy="148" r="3"/><circle cx="70" cy="174" r="3"/><circle cx="116" cy="172" r="3"/>
+<circle cx="48" cy="138" r="3"/><circle cx="132" cy="104" r="3"/><circle cx="96" cy="128" r="3"/>
+<circle cx="64" cy="164" r="3"/><circle cx="108" cy="136" r="3"/><circle cx="80" cy="150" r="3"/>
+</g>
+<circle cx="86" cy="134" r="4" fill="#1a1209"/>
+<circle cx="86" cy="134" r="8" fill="none" stroke="#1a1209" stroke-width="2"/>
+<!-- outlier -->
+<circle cx="196" cy="40" r="5" fill="#9a3412"/>
+<circle cx="196" cy="40" r="10" fill="none" stroke="#9a3412" stroke-width="2"/>
+<text x="20" y="28" font-size="8.5" font-weight="600" fill="#5c4a30">MB downloaded</text>
+<text x="20" y="40" font-size="8.5" font-weight="600" fill="#5c4a30">vs. hour of day</text>
+<!-- legend -->
+<text x="234" y="34" font-size="11" font-weight="800" fill="#9a3412">3 a.m. login</text>
+<text x="234" y="48" font-size="9" font-weight="600" fill="#1a1209">alone after 2 cuts</text>
+<text x="234" y="62" font-size="9" font-weight="600" fill="#5c4a30">short path:</text>
+<text x="234" y="74" font-size="9" font-weight="600" fill="#5c4a30">high anomaly score</text>
+<text x="234" y="124" font-size="11" font-weight="800" fill="#1a1209">Typical login</text>
+<text x="234" y="138" font-size="9" font-weight="600" fill="#1a1209">still has neighbors</text>
+<text x="234" y="150" font-size="9" font-weight="600" fill="#1a1209">after 8 cuts</text>
+<text x="234" y="164" font-size="9" font-weight="600" fill="#5c4a30">long path: normal</text>
+<text x="234" y="194" font-size="8.5" font-weight="600" fill="#5c4a30">Average over many</text>
+<text x="234" y="205" font-size="8.5" font-weight="600" fill="#5c4a30">random trees</text>
+</svg>

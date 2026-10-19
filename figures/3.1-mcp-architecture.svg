@@ -1,0 +1,74 @@
+<svg viewBox="0 0 760 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MCP architecture: a host contains the model and one MCP client per server; clients reach a local server over stdio and a remote server over Streamable HTTP">
+<defs><marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker></defs>
+<!-- host -->
+<rect x="8.5" y="12.5" width="300" height="208" rx="7" fill="#1a1209"/>
+<rect x="6" y="10" width="300" height="208" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="20" y="30" font-size="12" font-weight="800" fill="#3a1d70">HOST</text>
+<text x="58" y="30" font-size="9" font-weight="600" fill="#5c4a30">IDE, desktop chat app, SOC copilot</text>
+<rect x="22.5" y="44.5" width="126" height="50" rx="7" fill="#1a1209"/>
+<rect x="20" y="42" width="126" height="50" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="83" y="63" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Model</text>
+<text x="83" y="78" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">proposes tool calls</text>
+<rect x="166.5" y="44.5" width="126" height="50" rx="7" fill="#1a1209"/>
+<rect x="164" y="42" width="126" height="50" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="227" y="63" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Host + user</text>
+<text x="227" y="78" text-anchor="middle" font-size="9" font-weight="700" fill="#1a1209">approve each call</text>
+<rect x="22.5" y="114.5" width="270" height="38" rx="7" fill="#1a1209"/>
+<rect x="20" y="112" width="270" height="38" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="34" y="135" font-size="11" font-weight="800" fill="#1a1209">MCP client A</text>
+<text x="276" y="135" text-anchor="end" font-size="9" font-weight="600" fill="#5c4a30">starts and talks to server A</text>
+<rect x="22.5" y="166.5" width="270" height="38" rx="7" fill="#1a1209"/>
+<rect x="20" y="164" width="270" height="38" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="34" y="187" font-size="11" font-weight="800" fill="#1a1209">MCP client B</text>
+<text x="276" y="187" text-anchor="end" font-size="9" font-weight="600" fill="#5c4a30">one client per server</text>
+<g stroke="#1a1209" stroke-width="2" fill="none" marker-end="url(#ma)">
+<path d="M146 67H162"/>
+<path d="M227 92V110"/>
+</g>
+<!-- transports -->
+<g stroke="#1a1209" stroke-width="2" fill="none" marker-start="url(#ma)" marker-end="url(#ma)">
+<path d="M292 131H314V66H414"/>
+<path d="M292 183H314V170H414"/>
+</g>
+<text x="322" y="58" font-size="11" font-weight="800" fill="#6d28d9" class="mono">stdio</text>
+<text x="322" y="92" font-size="8.5" font-weight="600" fill="#5c4a30">local subprocess</text>
+<text x="322" y="103" font-size="8.5" font-weight="600" fill="#5c4a30">stdin / stdout</text>
+<text x="322" y="198" font-size="9.5" font-weight="800" fill="#6d28d9">Streamable</text>
+<text x="322" y="210" font-size="9.5" font-weight="800" fill="#6d28d9">HTTP</text>
+<text x="322" y="160" font-size="8.5" font-weight="600" fill="#5c4a30">POST /mcp</text>
+<!-- server A -->
+<rect x="420.5" y="20.5" width="204" height="92" rx="7" fill="#1a1209"/>
+<rect x="418" y="18" width="204" height="92" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="430" y="37" font-size="11" font-weight="800" fill="#1a1209">MCP server A: ioc-lookup</text>
+<text x="430" y="51" font-size="9" font-weight="600" fill="#5c4a30">same machine, user's privileges</text>
+<!-- server B -->
+<rect x="420.5" y="126.5" width="204" height="92" rx="7" fill="#1a1209"/>
+<rect x="418" y="124" width="204" height="92" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="430" y="143" font-size="11" font-weight="800" fill="#1a1209">MCP server B: tickets</text>
+<text x="430" y="157" font-size="9" font-weight="600" fill="#5c4a30">remote, OAuth token issued to it</text>
+<!-- chips -->
+<g font-size="9" font-weight="700" text-anchor="middle" fill="#fff">
+<rect x="428" y="72" width="58" height="22" rx="5" fill="#6d28d9"/><text x="457" y="86.5">Tools</text>
+<rect x="491" y="72" width="62" height="22" rx="5" fill="#6d28d9"/><text x="522" y="86.5">Resources</text>
+<rect x="558" y="72" width="56" height="22" rx="5" fill="#6d28d9"/><text x="586" y="86.5">Prompts</text>
+<rect x="428" y="178" width="58" height="22" rx="5" fill="#6d28d9"/><text x="457" y="192.5">Tools</text>
+<rect x="491" y="178" width="62" height="22" rx="5" fill="#6d28d9"/><text x="522" y="192.5">Resources</text>
+<rect x="558" y="178" width="56" height="22" rx="5" fill="#6d28d9"/><text x="586" y="192.5">Prompts</text>
+</g>
+<!-- backends -->
+<rect x="654.5" y="42.5" width="98" height="44" rx="7" fill="#1a1209"/>
+<rect x="652" y="40" width="98" height="44" rx="7" fill="#fffae0" stroke="#1a1209" stroke-width="2"/>
+<text x="701" y="59" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209" class="mono">iocs.txt</text>
+<text x="701" y="73" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">local data</text>
+<rect x="654.5" y="148.5" width="98" height="44" rx="7" fill="#1a1209"/>
+<rect x="652" y="146" width="98" height="44" rx="7" fill="#fffae0" stroke="#1a1209" stroke-width="2"/>
+<text x="701" y="165" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1a1209">Ticket API</text>
+<text x="701" y="179" text-anchor="middle" font-size="8.5" font-weight="600" fill="#5c4a30">its own token</text>
+<g stroke="#1a1209" stroke-width="2" fill="none" marker-end="url(#ma)">
+<path d="M622 62H648"/>
+<path d="M622 168H648"/>
+</g>
+<text x="701" y="114" text-anchor="middle" font-size="8.5" font-weight="800" fill="#9a3412">Descriptions and</text>
+<text x="701" y="125" text-anchor="middle" font-size="8.5" font-weight="800" fill="#9a3412">results flow back</text>
+<text x="701" y="136" text-anchor="middle" font-size="8.5" font-weight="800" fill="#9a3412">to the model</text>
+</svg>
