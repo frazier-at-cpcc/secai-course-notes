@@ -1,0 +1,39 @@
+<svg viewBox="0 0 760 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Guardrail pipeline: input guard, prompt template, model, output filter, and output guard, each able to block the request">
+<defs><marker id="gpa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker><marker id="gpr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9a3412"/></marker><marker id="gpp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6d28d9"/></marker></defs>
+<rect x="8.5" y="40.5" width="104" height="58" rx="7" fill="#1a1209"/><rect x="6" y="38" width="104" height="58" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="58.0" y="64.3" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">User prompt</text>
+<text x="58.0" y="77.3" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">untrusted text</text>
+<rect x="134.5" y="40.5" width="104" height="58" rx="7" fill="#1a1209"/><rect x="132" y="38" width="104" height="58" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="184.0" y="58.3" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Input guard</text>
+<text x="184.0" y="71.3" text-anchor="middle" font-size="9" font-weight="600" fill="#1a1209">llama-guard3:1b</text>
+<text x="184.0" y="83.3" text-anchor="middle" font-size="9" font-weight="600" fill="#1a1209">safe or unsafe Sn</text>
+<rect x="260.5" y="40.5" width="104" height="58" rx="7" fill="#1a1209"/><rect x="258" y="38" width="104" height="58" rx="7" fill="#fffae0" stroke="#1a1209" stroke-width="2"/>
+<text x="310.0" y="58.3" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Prompt template</text>
+<text x="310.0" y="71.3" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">rules + fenced</text>
+<text x="310.0" y="83.3" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">user input</text>
+<rect x="386.5" y="40.5" width="104" height="58" rx="7" fill="#1a1209"/><rect x="384" y="38" width="104" height="58" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="436.0" y="64.3" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">Model</text>
+<text x="436.0" y="77.3" text-anchor="middle" font-size="9" font-weight="600" fill="#efe6ff">qwen2.5:0.5b</text>
+<rect x="512.5" y="40.5" width="104" height="58" rx="7" fill="#1a1209"/><rect x="510" y="38" width="104" height="58" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="562.0" y="58.3" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Output filter</text>
+<text x="562.0" y="71.3" text-anchor="middle" font-size="9" font-weight="600" fill="#1a1209">canary regex</text>
+<text x="562.0" y="83.3" text-anchor="middle" font-size="9" font-weight="600" fill="#1a1209">STAFF-\d{4}</text>
+<rect x="638.5" y="40.5" width="104" height="58" rx="7" fill="#1a1209"/><rect x="636" y="38" width="104" height="58" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="688.0" y="58.3" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Output guard</text>
+<text x="688.0" y="71.3" text-anchor="middle" font-size="9" font-weight="600" fill="#1a1209">llama-guard3:1b</text>
+<text x="688.0" y="83.3" text-anchor="middle" font-size="9" font-weight="600" fill="#1a1209">judges the reply</text>
+<path d="M113 67.0H129" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gpa)"/>
+<path d="M239 67.0H255" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gpa)"/>
+<path d="M365 67.0H381" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gpa)"/>
+<path d="M491 67.0H507" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gpa)"/>
+<path d="M617 67.0H633" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#gpa)"/>
+<rect x="120" y="134" width="634" height="34" rx="7" fill="#fffae0" stroke="#9a3412" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="437" y="148" text-anchor="middle" font-size="10" font-weight="800" fill="#9a3412">BLOCKED: return a refusal, log the verdict and the layer that fired</text>
+<text x="437" y="161" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">Fail closed: a guard that errors or times out counts as a block</text>
+<path d="M184.0 100V131" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gpr)"/>
+<path d="M562.0 100V131" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gpr)"/>
+<path d="M688.0 100V131" fill="none" stroke="#9a3412" stroke-width="2" marker-end="url(#gpr)"/>
+<path d="M688.0 36V16H58.0V33" fill="none" stroke="#6d28d9" stroke-width="2" marker-end="url(#gpp)"/>
+<rect x="250" y="8" width="270" height="16" fill="#fff"/>
+<text x="385" y="20" text-anchor="middle" font-size="9.5" font-weight="700" fill="#6d28d9">reply returned only when every layer passes</text>
+</svg>

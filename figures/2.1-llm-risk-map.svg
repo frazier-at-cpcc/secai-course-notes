@@ -1,0 +1,49 @@
+<svg viewBox="0 0 760 214" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An LLM application with retrieval and tools, marked with where each OWASP 2025 LLM risk applies">
+<defs><marker id="rma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker><marker id="rmr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9a3412"/></marker><marker id="rmp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6d28d9"/></marker></defs>
+<rect x="10.5" y="42.5" width="112" height="52" rx="7" fill="#1a1209"/><rect x="8" y="40" width="112" height="52" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="64.0" y="63.6" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">User</text>
+<text x="64.0" y="76.6" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">chat, email, files</text>
+<rect x="164.5" y="42.5" width="112" height="52" rx="7" fill="#1a1209"/><rect x="162" y="40" width="112" height="52" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="218.0" y="63.6" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Chat app</text>
+<text x="218.0" y="76.6" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">system prompt</text>
+<rect x="318.5" y="42.5" width="112" height="52" rx="7" fill="#1a1209"/><rect x="316" y="40" width="112" height="52" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="372.0" y="63.6" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">LLM</text>
+<text x="372.0" y="76.6" text-anchor="middle" font-size="9" font-weight="600" fill="#efe6ff">the model</text>
+<rect x="472.5" y="42.5" width="112" height="52" rx="7" fill="#1a1209"/><rect x="470" y="40" width="112" height="52" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="526.0" y="63.6" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Output handling</text>
+<text x="526.0" y="76.6" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">parse, render, act</text>
+<rect x="626.5" y="42.5" width="112" height="52" rx="7" fill="#1a1209"/><rect x="624" y="40" width="112" height="52" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="680.0" y="63.6" text-anchor="middle" font-size="12" font-weight="800" fill="#1a1209">Downstream</text>
+<text x="680.0" y="76.6" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">browser, shell, SQL</text>
+<path d="M123 66.0H159" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#rma)"/>
+<path d="M277 66.0H313" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#rma)"/>
+<path d="M431 66.0H467" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#rma)"/>
+<path d="M585 66.0H621" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#rma)"/>
+<rect x="152.5" y="154.5" width="136" height="46" rx="7" fill="#1a1209"/><rect x="150" y="152" width="136" height="46" rx="7" fill="#fffae0" stroke="#1a1209" stroke-width="2"/>
+<text x="218.0" y="172.3" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Vector store</text>
+<text x="218.0" y="185.3" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">RAG documents</text>
+<rect x="302.5" y="154.5" width="144" height="46" rx="7" fill="#1a1209"/><rect x="300" y="152" width="144" height="46" rx="7" fill="#fffae0" stroke="#1a1209" stroke-width="2"/>
+<text x="372.0" y="172.3" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Training and supply</text>
+<text x="372.0" y="185.3" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">data, model hub, libraries</text>
+<rect x="472.5" y="154.5" width="112" height="46" rx="7" fill="#1a1209"/><rect x="470" y="152" width="112" height="46" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="526.0" y="172.3" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209">Tools, agents</text>
+<text x="526.0" y="185.3" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">APIs with permissions</text>
+<path d="M218 150V98" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#rma)"/>
+<path d="M372 150V98" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#rma)"/>
+<path d="M526 150V98" fill="none" stroke="#1a1209" stroke-width="2" marker-end="url(#rma)" marker-start="url(#rma)"/>
+<rect x="119" y="18" width="44" height="16" rx="4" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/><text x="141.0" y="29.5" text-anchor="middle" font-size="9" font-weight="800" fill="#1a1209">LLM01</text>
+<rect x="119" y="100" width="44" height="16" rx="4" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/><text x="141.0" y="111.5" text-anchor="middle" font-size="9" font-weight="800" fill="#1a1209">LLM10</text>
+<rect x="196" y="31" width="44" height="16" rx="4" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/><text x="218.0" y="42.5" text-anchor="middle" font-size="9" font-weight="800" fill="#1a1209">LLM07</text>
+<rect x="326" y="31" width="44" height="16" rx="4" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/><text x="348.0" y="42.5" text-anchor="middle" font-size="9" font-weight="800" fill="#1a1209">LLM02</text>
+<rect x="378" y="31" width="44" height="16" rx="4" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/><text x="400.0" y="42.5" text-anchor="middle" font-size="9" font-weight="800" fill="#1a1209">LLM09</text>
+<rect x="504" y="31" width="44" height="16" rx="4" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/><text x="526.0" y="42.5" text-anchor="middle" font-size="9" font-weight="800" fill="#1a1209">LLM05</text>
+<rect x="196" y="143" width="44" height="16" rx="4" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/><text x="218.0" y="154.5" text-anchor="middle" font-size="9" font-weight="800" fill="#1a1209">LLM08</text>
+<rect x="324" y="143" width="44" height="16" rx="4" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/><text x="346.0" y="154.5" text-anchor="middle" font-size="9" font-weight="800" fill="#1a1209">LLM04</text>
+<rect x="376" y="143" width="44" height="16" rx="4" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/><text x="398.0" y="154.5" text-anchor="middle" font-size="9" font-weight="800" fill="#1a1209">LLM03</text>
+<rect x="504" y="143" width="44" height="16" rx="4" fill="#ffd60a" stroke="#1a1209" stroke-width="1.5"/><text x="526.0" y="154.5" text-anchor="middle" font-size="9" font-weight="800" fill="#1a1209">LLM06</text>
+<text x="598" y="140" text-anchor="start" font-size="9" font-weight="600" fill="#5c4a30">Injected text arrives</text>
+<text x="598" y="152" text-anchor="start" font-size="9" font-weight="600" fill="#5c4a30">from users (direct) or from</text>
+<text x="598" y="164" text-anchor="start" font-size="9" font-weight="600" fill="#5c4a30">documents, mail, and web</text>
+<text x="598" y="176" text-anchor="start" font-size="9" font-weight="600" fill="#5c4a30">pages the app retrieves</text>
+<text x="598" y="188" text-anchor="start" font-size="9" font-weight="600" fill="#5c4a30">(indirect).</text>
+</svg>
