@@ -1,0 +1,64 @@
+<svg viewBox="0 0 760 228" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Envelope encryption: a per-file data key encrypts the embedding store with AES-256-GCM, a KMS key wraps the data key, and the sealed file holds the wrapped key, nonce, ciphertext, and tag">
+  <defs>
+    <marker id="ee-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker>
+    <marker id="ee-pur" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6d28d9"/></marker>
+  </defs>
+  <g text-anchor="middle" font-weight="800">
+    <!-- plaintext -->
+    <rect x="12.5" y="22.5" width="150" height="52" rx="7" fill="#1a1209"/><rect x="10" y="20" width="150" height="52" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+    <text x="85" y="42" font-size="11.5" fill="#1a1209" class="mono">vectors.npy</text>
+    <text x="85" y="59" font-size="9.5" font-weight="600" fill="#5c4a30">plaintext vectors</text>
+    <!-- DEK -->
+    <rect x="12.5" y="98.5" width="150" height="52" rx="7" fill="#1a1209"/><rect x="10" y="96" width="150" height="52" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+    <text x="85" y="118" font-size="12" fill="#1a1209">Data key (DEK)</text>
+    <text x="85" y="135" font-size="9.5" font-weight="700" fill="#1a1209">random 256-bit, per file</text>
+    <!-- GCM -->
+    <rect x="212.5" y="22.5" width="176" height="84" rx="7" fill="#1a1209"/><rect x="210" y="20" width="176" height="84" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+    <text x="298" y="42" font-size="12.5" fill="#1a1209">AES-256-GCM</text>
+    <text x="298" y="61" font-size="9.5" font-weight="600" fill="#5c4a30">nonce: 12 random bytes</text>
+    <text x="298" y="76" font-size="9.5" font-weight="600" fill="#5c4a30">AAD label (not secret):</text>
+    <text x="298" y="91" font-size="9.5" font-weight="700" fill="#3a1d70" class="mono">kb:v3</text>
+    <!-- KMS -->
+    <rect x="212.5" y="134.5" width="176" height="52" rx="7" fill="#1a1209"/><rect x="210" y="132" width="176" height="52" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+    <text x="298" y="154" font-size="12.5" fill="#fff">KMS or HSM</text>
+    <text x="298" y="171" font-size="9.5" font-weight="700" fill="#efe6ff">KEK wraps the DEK</text>
+  </g>
+  <!-- sealed file bar -->
+  <text x="595" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#1a1209" class="mono">vectors.npy.enc</text>
+  <rect x="442.5" y="66.5" width="306" height="40" rx="7" fill="#1a1209"/>
+  <rect x="440" y="64" width="306" height="40" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+  <rect x="441" y="65" width="64" height="38" fill="#c4b3ff"/>
+  <rect x="505" y="65" width="40" height="38" fill="#fffae0"/>
+  <rect x="694" y="65" width="51" height="38" fill="#ffd60a"/>
+  <g stroke="#1a1209" stroke-width="1.5">
+    <path d="M505 64V104"/><path d="M545 64V104"/><path d="M694 64V104"/>
+  </g>
+  <rect x="440" y="64" width="306" height="40" rx="7" fill="none" stroke="#1a1209" stroke-width="2"/>
+  <g text-anchor="middle" font-size="9.5" font-weight="800" fill="#1a1209">
+    <text x="473" y="82">wrapped</text><text x="473" y="94">DEK</text>
+    <text x="525" y="88">nonce</text>
+    <text x="619" y="88">ciphertext</text>
+    <text x="719" y="88">tag</text>
+  </g>
+  <g text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">
+    <text x="473" y="118">40 B</text>
+    <text x="525" y="118">12 B</text>
+    <text x="619" y="118">same size as data</text>
+    <text x="719" y="118">16 B</text>
+  </g>
+  <!-- arrows -->
+  <g stroke="#1a1209" stroke-width="2" fill="none" marker-end="url(#ee-ink)">
+    <path d="M161 46H205"/>
+    <path d="M161 112C185 112 190 92 205 86"/>
+    <path d="M85 149V158H205"/>
+    <path d="M387 62H420V88H436"/>
+  </g>
+  <path d="M387 158H452V110" fill="none" stroke="#6d28d9" stroke-width="2" marker-end="url(#ee-pur)"/>
+  <!-- note -->
+  <text x="595" y="150" text-anchor="middle" font-size="10" font-weight="800" fill="#1a1209">To open: KMS unwraps the DEK,</text>
+  <text x="595" y="164" text-anchor="middle" font-size="10" font-weight="800" fill="#1a1209">then GCM recomputes the tag</text>
+  <text x="595" y="184" text-anchor="middle" font-size="9.5" font-weight="600" fill="#9a3412">One changed bit, or a different AAD label,</text>
+  <text x="595" y="197" text-anchor="middle" font-size="9.5" font-weight="600" fill="#9a3412">fails with InvalidTag and returns no data</text>
+  <text x="298" y="210" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">Rotating the KEK rewraps 32-byte keys,</text>
+  <text x="298" y="222" text-anchor="middle" font-size="9" font-weight="600" fill="#5c4a30">not terabytes of data</text>
+</svg>
