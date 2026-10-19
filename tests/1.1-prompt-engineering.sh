@@ -8,14 +8,14 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 source tests/lib/ollama.sh
 WORK=$(mktemp -d)
-trap 'ollama_down sa11-ollama; rm -rf "$WORK"' EXIT
-ollama_up sa11-ollama 11510 qwen2.5:0.5b
+trap 'ollama_down sa11-pe-ollama; rm -rf "$WORK"' EXIT
+ollama_up sa11-pe-ollama 11511 qwen2.5:0.5b
 export OLLAMA_URL MODEL=qwen2.5:0.5b
 cd "$WORK"
 
 # The model file ships a default system prompt, used when a request has none
 echo '$ ollama show --system qwen2.5:0.5b'
-def=$(docker exec sa11-ollama ollama show --system qwen2.5:0.5b); echo "$def"
+def=$(docker exec sa11-pe-ollama ollama show --system qwen2.5:0.5b); echo "$def"
 grep -qF "You are Qwen, created by Alibaba Cloud." <<<"$def"
 
 # ask.sh [-s SYSTEM] [-x SHOTS_FILE] < user prompt

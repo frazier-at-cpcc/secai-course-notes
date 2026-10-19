@@ -41,7 +41,7 @@ example `2.6-*.sh`), before a release or after a tool or model update.
 ```sh
 npm install
 npm run build                             # writes all PDFs to dist/
-bash tests/2.6-prompt-attacks.sh          # one topic's commands
+bash tests/2.6-prompt-injection.sh        # one topic's commands
 for t in tests/*.sh; do bash "$t"; done   # all of them
 ```
 

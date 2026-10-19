@@ -139,7 +139,7 @@ PY
 cat > pipeline.sh <<'SH'
 #!/usr/bin/env bash
 # usage: pipeline.sh <model-version>
-set -uo pipefail
+set -euo pipefail
 export CANDIDATE="models/$1.json"
 stage() {
   local name=$1; shift
