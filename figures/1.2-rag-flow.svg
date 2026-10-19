@@ -1,0 +1,65 @@
+<svg viewBox="0 0 760 252" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RAG ingestion and query pipelines, with an ingestion gate on the write path and an access-control filter on the read path">
+<defs><marker id="rf-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker>
+<marker id="rf-p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6d28d9"/></marker></defs>
+<text x="20" y="16" font-size="10" font-weight="800" letter-spacing="1.4" fill="#5c4a30">WRITE PATH: INGESTION <tspan font-weight="600" letter-spacing="0">(who may add to the corpus)</tspan></text>
+<g text-anchor="middle">
+<rect x="22.5" y="30.5" width="140" height="56" rx="7" fill="#1a1209"/><rect x="20" y="28" width="140" height="56" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="90" y="51" font-size="12" font-weight="800" fill="#1a1209">Documents</text>
+<text x="90" y="67" font-size="9" font-weight="600" fill="#5c4a30">policies, runbooks,</text>
+<text x="90" y="78" font-size="9" font-weight="600" fill="#5c4a30">tickets, wiki pages</text>
+<rect x="192.5" y="30.5" width="150" height="56" rx="7" fill="#1a1209"/><rect x="190" y="28" width="150" height="56" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="265" y="51" font-size="12" font-weight="800" fill="#1a1209">Ingestion gate</text>
+<text x="265" y="67" font-size="9" font-weight="700" fill="#1a1209">allowlisted sources,</text>
+<text x="265" y="78" font-size="9" font-weight="700" fill="#1a1209">review, scan, hash</text>
+<rect x="372.5" y="30.5" width="150" height="56" rx="7" fill="#1a1209"/><rect x="370" y="28" width="150" height="56" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="445" y="51" font-size="12" font-weight="800" fill="#1a1209">Chunk and embed</text>
+<text x="445" y="67" font-size="9" font-weight="600" fill="#5c4a30">embedding model</text>
+<text x="445" y="78" font-size="9" font-weight="600" fill="#5c4a30" class="mono">all-minilm, 384 dims</text>
+<rect x="552.5" y="30.5" width="188" height="56" rx="7" fill="#1a1209"/><rect x="550" y="28" width="188" height="56" rx="7" fill="#6d28d9" stroke="#1a1209" stroke-width="2"/>
+<text x="644" y="51" font-size="12" font-weight="800" fill="#fff">Vector store</text>
+<text x="644" y="67" font-size="9" font-weight="600" fill="#efe6ff">vector + text + metadata:</text>
+<text x="644" y="78" font-size="9" font-weight="600" fill="#efe6ff">groups, source, owner, hash</text>
+</g>
+<g stroke="#1a1209" stroke-width="2" marker-end="url(#rf-a)">
+<path d="M162.5 56H187.5"/>
+<path d="M342.5 56H367.5"/>
+<path d="M522.5 56H547.5"/>
+</g>
+<path d="M644 86.5V118H350V164.5" fill="none" stroke="#6d28d9" stroke-width="2" marker-end="url(#rf-p)"/>
+<text x="497" y="112" text-anchor="middle" font-size="9" font-weight="700" fill="#6d28d9">every candidate chunk, with its metadata</text>
+<text x="20" y="144" font-size="10" font-weight="800" letter-spacing="1.4" fill="#5c4a30">READ PATH: QUERY <tspan font-weight="600" letter-spacing="0">(which chunks this user may receive)</tspan></text>
+<g text-anchor="middle">
+<rect x="22.5" y="169.5" width="110" height="56" rx="7" fill="#1a1209"/><rect x="20" y="167" width="110" height="56" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="75" y="190" font-size="12" font-weight="800" fill="#1a1209">Question</text>
+<text x="75" y="206" font-size="9" font-weight="600" fill="#5c4a30">plus the user's</text>
+<text x="75" y="217" font-size="9" font-weight="600" fill="#5c4a30">identity, groups</text>
+<rect x="152.5" y="169.5" width="80" height="56" rx="7" fill="#1a1209"/><rect x="150" y="167" width="80" height="56" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="190" y="190" font-size="12" font-weight="800" fill="#1a1209">Embed</text>
+<text x="190" y="206" font-size="9" font-weight="600" fill="#5c4a30">same model</text>
+<text x="190" y="217" font-size="9" font-weight="600" fill="#5c4a30">as ingestion</text>
+<rect x="252.5" y="169.5" width="130" height="56" rx="7" fill="#1a1209"/><rect x="250" y="167" width="130" height="56" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="315" y="190" font-size="12" font-weight="800" fill="#1a1209">Access filter</text>
+<text x="315" y="206" font-size="9" font-weight="700" fill="#1a1209">drop chunks outside</text>
+<text x="315" y="217" font-size="9" font-weight="700" fill="#1a1209">the user's groups</text>
+<rect x="402.5" y="169.5" width="96" height="56" rx="7" fill="#1a1209"/><rect x="400" y="167" width="96" height="56" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="448" y="190" font-size="12" font-weight="800" fill="#1a1209">Rank</text>
+<text x="448" y="206" font-size="9" font-weight="600" fill="#5c4a30">cosine similarity,</text>
+<text x="448" y="217" font-size="9" font-weight="600" fill="#5c4a30">keep top k</text>
+<rect x="518.5" y="169.5" width="112" height="56" rx="7" fill="#1a1209"/><rect x="516" y="167" width="112" height="56" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="572" y="190" font-size="12" font-weight="800" fill="#1a1209">Prompt + LLM</text>
+<text x="572" y="206" font-size="9" font-weight="600" fill="#5c4a30">question and</text>
+<text x="572" y="217" font-size="9" font-weight="600" fill="#5c4a30">retrieved chunks</text>
+<rect x="650.5" y="169.5" width="90" height="56" rx="7" fill="#1a1209"/><rect x="648" y="167" width="90" height="56" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="693" y="190" font-size="12" font-weight="800" fill="#1a1209">Answer</text>
+<text x="693" y="206" font-size="9" font-weight="600" fill="#5c4a30">with sources;</text>
+<text x="693" y="217" font-size="9" font-weight="600" fill="#5c4a30">retrieval logged</text>
+</g>
+<g stroke="#1a1209" stroke-width="2" marker-end="url(#rf-a)">
+<path d="M132.5 195H147.5"/>
+<path d="M232.5 195H247.5"/>
+<path d="M382.5 195H397.5"/>
+<path d="M498.5 195H513.5"/>
+<path d="M630.5 195H645.5"/>
+</g>
+<text x="380" y="246" text-anchor="middle" font-size="9.5" font-weight="700" fill="#3a1d70">Filter before ranking: a chunk the user may not read never reaches the prompt, so the model cannot leak it.</text>
+</svg>

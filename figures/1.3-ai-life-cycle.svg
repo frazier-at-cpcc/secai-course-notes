@@ -1,0 +1,73 @@
+<svg viewBox="0 0 760 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The AI life cycle as a loop of nine stages, each with a security control">
+<defs><marker id="lc13-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1a1209"/></marker>
+<marker id="lc13-p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6d28d9"/></marker></defs>
+<g text-anchor="middle">
+<rect x="22.5" y="18.5" width="128" height="80" rx="7" fill="#1a1209"/><rect x="20" y="16" width="128" height="80" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="84.0" y="35" font-size="11" font-weight="800" fill="#1a1209">Business use case</text>
+<text x="84.0" y="49" font-size="11" font-weight="800" fill="#1a1209">and alignment</text>
+<path d="M30 59H138" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="84.0" y="73" font-size="9" font-weight="700" fill="#6d28d9">risk rating, owner,</text>
+<text x="84.0" y="85" font-size="9" font-weight="700" fill="#6d28d9">first threat model</text>
+<rect x="170.5" y="18.5" width="128" height="80" rx="7" fill="#1a1209"/><rect x="168" y="16" width="128" height="80" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="232.0" y="42" font-size="11" font-weight="800" fill="#1a1209">Data collection</text>
+<path d="M178 59H286" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="232.0" y="73" font-size="9" font-weight="700" fill="#6d28d9">provenance; trust and</text>
+<text x="232.0" y="85" font-size="9" font-weight="700" fill="#6d28d9">authenticity checks</text>
+<rect x="318.5" y="18.5" width="128" height="80" rx="7" fill="#1a1209"/><rect x="316" y="16" width="128" height="80" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="380.0" y="42" font-size="11" font-weight="800" fill="#1a1209">Data preparation</text>
+<path d="M326 59H434" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="380.0" y="73" font-size="9" font-weight="700" fill="#6d28d9">cleanse, verify,</text>
+<text x="380.0" y="85" font-size="9" font-weight="700" fill="#6d28d9">hash manifest</text>
+<rect x="466.5" y="18.5" width="128" height="80" rx="7" fill="#1a1209"/><rect x="464" y="16" width="128" height="80" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="528.0" y="35" font-size="11" font-weight="800" fill="#1a1209">Model development</text>
+<text x="528.0" y="49" font-size="11" font-weight="800" fill="#1a1209">or selection</text>
+<path d="M474 59H582" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="528.0" y="73" font-size="9" font-weight="700" fill="#6d28d9">scan and pin third-</text>
+<text x="528.0" y="85" font-size="9" font-weight="700" fill="#6d28d9">party models</text>
+<rect x="614.5" y="18.5" width="128" height="80" rx="7" fill="#1a1209"/><rect x="612" y="16" width="128" height="80" rx="7" fill="#fff" stroke="#1a1209" stroke-width="2"/>
+<text x="676.0" y="42" font-size="11" font-weight="800" fill="#1a1209">Model evaluation</text>
+<path d="M622 59H730" stroke="#d8d2c8" stroke-width="1.5"/>
+<text x="676.0" y="73" font-size="9" font-weight="700" fill="#6d28d9">metrics gate,</text>
+<text x="676.0" y="85" font-size="9" font-weight="700" fill="#6d28d9">red teaming</text>
+<rect x="614.5" y="142.5" width="128" height="80" rx="7" fill="#1a1209"/><rect x="612" y="140" width="128" height="80" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="676.0" y="166" font-size="11" font-weight="800" fill="#1a1209">Deployment</text>
+<path d="M622 183H730" stroke="#c4b3ff" stroke-width="1.5"/>
+<text x="676.0" y="197" font-size="9" font-weight="700" fill="#6d28d9">registry hash or</text>
+<text x="676.0" y="209" font-size="9" font-weight="700" fill="#6d28d9">signature check</text>
+<rect x="466.5" y="142.5" width="128" height="80" rx="7" fill="#1a1209"/><rect x="464" y="140" width="128" height="80" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="528.0" y="166" font-size="11" font-weight="800" fill="#1a1209">Validation</text>
+<path d="M474 183H582" stroke="#c4b3ff" stroke-width="1.5"/>
+<text x="528.0" y="197" font-size="9" font-weight="700" fill="#6d28d9">golden set, guardrails</text>
+<text x="528.0" y="209" font-size="9" font-weight="700" fill="#6d28d9">confirmed active</text>
+<rect x="318.5" y="142.5" width="128" height="80" rx="7" fill="#1a1209"/><rect x="316" y="140" width="128" height="80" rx="7" fill="#efe6ff" stroke="#1a1209" stroke-width="2"/>
+<text x="380.0" y="159" font-size="11" font-weight="800" fill="#1a1209">Monitoring and</text>
+<text x="380.0" y="173" font-size="11" font-weight="800" fill="#1a1209">maintenance</text>
+<path d="M326 183H434" stroke="#c4b3ff" stroke-width="1.5"/>
+<text x="380.0" y="197" font-size="9" font-weight="700" fill="#6d28d9">drift, abuse, patching,</text>
+<text x="380.0" y="209" font-size="9" font-weight="700" fill="#6d28d9">retirement</text>
+<rect x="170.5" y="142.5" width="128" height="80" rx="7" fill="#1a1209"/><rect x="168" y="140" width="128" height="80" rx="7" fill="#ffd60a" stroke="#1a1209" stroke-width="2"/>
+<text x="232.0" y="159" font-size="11" font-weight="800" fill="#1a1209">Feedback and</text>
+<text x="232.0" y="173" font-size="11" font-weight="800" fill="#1a1209">iteration</text>
+<path d="M178 183H286" stroke="#1a1209" stroke-width="1" opacity="0.35"/>
+<text x="232.0" y="197" font-size="9" font-weight="700" fill="#1a1209">feedback is untrusted:</text>
+<text x="232.0" y="209" font-size="9" font-weight="700" fill="#1a1209">validate before reuse</text>
+</g>
+<g stroke="#1a1209" stroke-width="2" marker-end="url(#lc13-a)">
+<path d="M148.5 56H165.5"/>
+<path d="M296.5 56H313.5"/>
+<path d="M444.5 56H461.5"/>
+<path d="M592.5 56H609.5"/>
+<path d="M676.0 96.5V137.5"/>
+<path d="M612 180H595.0"/>
+<path d="M464 180H447.0"/>
+<path d="M316 180H299.0"/>
+</g>
+<path d="M232.0 140V99" stroke="#6d28d9" stroke-width="2.5" marker-end="url(#lc13-p)"/>
+<text x="240.0" y="122" font-size="9.5" font-weight="800" fill="#6d28d9">next iteration</text>
+<g font-size="9" font-weight="700" fill="#5c4a30">
+<text x="20" y="156">BUILD: top row</text>
+<text x="20" y="170">RUN: bottom row</text>
+<text x="20" y="194" fill="#6d28d9">purple text:</text>
+<text x="20" y="206" fill="#6d28d9">security control</text>
+</g>
+</svg>
